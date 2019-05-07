@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Алексей](https://up.htmlacademy.ru/htmlcss/25/user/798729).
+* Студент: [Алексей Рогач](https://up.htmlacademy.ru/htmlcss/25/user/798729).
 * Наставник: [Максим Фарига](https://up.htmlacademy.ru/htmlcss/25/user/6090).
 
 ---
