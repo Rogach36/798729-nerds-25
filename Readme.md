@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей](https://up.htmlacademy.ru/htmlcss/25/user/798729).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига](https://up.htmlacademy.ru/htmlcss/25/user/6090).
 
 ---
 
