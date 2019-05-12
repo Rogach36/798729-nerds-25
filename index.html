@@ -9,7 +9,7 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a>
+      <a class="main-header-logo"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a>
       <ul class="site-navigation">
         <li><a href="info.html">Студия</a></li>
         <li><a href="our-clients.html">Клиенты</a></li>
@@ -26,21 +26,21 @@
     <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
     <section class="features">
       <div class="features-slide-1">
-        <p><b>Долго, дорого, скрупулезно.</b></p>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <img src="img/slide-1.jpg" alt="Смартфоны" width="698" height="413">
+        <div class="slide-1"></div>
+        <p class="slide-1-slogan"><b>Долго, дорого, скрупулезно.</b></p>
+        <p class="slide-1-caption">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
         <a class="button-info" href="#">Узнать больше</a>
       </div>
       <div class="features-slide-2">
-        <p><b>Любим математику как никто другой</b></p>
-        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-        <img src="img/slide-2.jpg" alt="Мониторы" width="698" height="413">
+        <div class="slide-2"></div>
+        <p class="slide-2-slogan"><b>Любим математику как никто другой</b></p>
+        <p class="slide-2-caption">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
         <a class="button-info" href="#">Узнать больше</a>
       </div>
       <div class="features-slide-3">
-        <p><b>Только ночь, только хардкор</b></p>
-        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
-        <img src="img/slide-3.jpg" alt="Планшеты" width="698" height="413">
+        <div class="slide-3"></div>
+        <p class="slide-3-slogan"><b>Только ночь, только хардкор</b></p>
+        <p class="slide-3-caption">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
         <a class="button-info" href="#">Узнать больше</a>
       </div>
     </section>
@@ -49,51 +49,55 @@
       <ul class="service-list">
         <li class="service-item">
           <img src="img/site" alt="Монитор с сайтом" width="300" height="146">
-          <h3>Веб-сайты</h3>
+          <p class="site">Веб-сайты</p>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="order-button" href="order-project.html">Заказать</a>
         </li>
         <li class="service-item">
           <img src="img/applications.jpg" alt="Смартфоны с приложением" width="300" height="146">
-          <h3>Приложения</h3>
+          <p class="applications">Приложения</p>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="order-button" href="order-project.html">Заказать</a>
         </li>
         <li class="service-item">
           <img src="img/presentation.jpg" alt="Презентационная доска" width="300" height="146">
-          <h3>Презентации</h3>
+          <p class="presentation">Презентации</p>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="order-button" href="order-project.html">Заказать</a>
         </li>
       </ul>
     </section>
-    <section class="adout-us">
-      <p><b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b></p>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический рассчет
-        превыше креатива. Работаем непокладая рук, как роботы.</p>
-    </section>
     <section class="partners">
       <h2 class="visually-hidden">Наши партнеры</h2>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      <a href="#">Barbershop Borodiski</a>
-      <a href="#">Pink</a>
-      <a href="#">Mishka</a>
+      <ul>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" alt="HTML Academy"></a></li>
+        <li><a href="#"><img src="img/logo-html.png" alt="Barbershop Borodiski"></a></li>
+        <li><a href="#"><img src="img/logo-pink.png" alt="Pink"></a></li>
+        <li><a href="#"><img src="img/logo-mishka.png" alt="Mishka"></a></li>
+      </ul>
     </section>
   </main>
   <footer class="main-footer">
-    <p class="contacts">
-      <b>Nёrds design studio</b>
-      191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (817) 275-75-75
-      <a class="button" href="#">Напишите нам</a>
-    </p>
-    <!-- Здесь будет форма обратной связи -->
-    <div class="footer-social">
-      <a class="social button" href="#">Вконтакте</a>
-      <a class="social button" href="#">Фейсбук</a>
-      <a class="social button" href="#">Инстаграм</a>
+    <div class="location">
+      <div class="contacts">
+        <p class="contact-name">Nёrds design studio</p>
+        <p class="contact-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contact-phone">тел. +7 (817) 275-75-75</p>
+        <a class="button" href="#">Напишите нам</a>
+      </div>
     </div>
-    <p><b>Давайте дружить, это выгодно!</b></p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <!-- Здесь будет форма обратной связи -->
+    <div class="connection">
+      <div class="footer-social">
+        <a class="social button" href="#">Вконтакте</a>
+        <a class="social button" href="#">Фейсбук</a>
+        <a class="social button" href="#">Инстаграм</a>
+      </div>
+      <div class="for-friends">
+        <p class="friendship"><b>Давайте дружить, это выгодно!</b></p>
+        <p class="discont">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
   </footer>
 </body>
 
