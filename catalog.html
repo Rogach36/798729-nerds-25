@@ -27,6 +27,43 @@
     </section>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="filter" method="get" action="index.html">
+        <fieldset>
+          <legend class="filter-title">Сетка:</legend>
+          <ul>
+            <li class="filter-option">
+              <label><input class="filter-input filter-input-radio" type="radio" name="grid-type" value="adaptive" checked>Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <label><input class="filter-input filter-input-radio" type="radio" name="grid-type" value="static">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <label><input class="filter-input filter-input-radio" type="radio" name="grid-type" value="straching">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-title">Особености:</legend>
+          <ul>
+            <li class="filter-option">
+              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="slider" checked>Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="feature-block">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="news" checked>Новости</label>
+            </li>
+            <li class="filter-option">
+              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="galary">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="kart">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="filter-button button" type="submit">Отправить</button>
+      </form>
       <!-- Здесь будет форма -->
     </section>
     <section class="catalog">
@@ -99,6 +136,16 @@
       </div>
     </div>
     <!-- Здесь будет форма обратной связи -->
+    <section class="write-back">
+      <h2 class="write-us">Напишите нам</h2>
+      <form class="write-fill-up" action="index.html" method="post">
+        <label>Ваше имя:<input type="text" name="name sername" value="" placeholder="Имя Фамилия" aria-label="Поле для имени и фамилии"></label>
+        <label>Ваш e-mail:<input type="text" name="e-mail" value="" placeholder="email@example.com" aria-label="Поле для email"></label>
+        <label>Текст письма:<textarea name="letter" placeholder="В свободной форме" aria-label="Поле для обращения"></textarea></label>
+        <button class="modal-close" type="button" aria-label="Закрыть pop-up">Закрыть</button>
+        <button class="modal-button button" type="submit">Отправить</button>
+      </form>
+    </section>
     <div class="connection">
       <div class="footer-social">
         <a class="social button" href="#">Вконтакте</a>
