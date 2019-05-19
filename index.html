@@ -118,11 +118,11 @@
     <!-- Здесь будет форма обратной связи -->
     <section class="popup">
       <h2 class="popup-title">Напишите нам</h2>
-      <form class="popup-form" action="index.html" method="post">
+      <form class="popup-form" action="/echo" method="post">
         <label>Ваше имя:<input type="text" name="name sername" value="" placeholder="Имя Фамилия" aria-label="Поле для имени и фамилии"></label>
         <label>Ваш e-mail:<input type="text" name="e-mail" value="" placeholder="email@example.com" aria-label="Поле для email"></label>
         <label>Текст письма:<textarea name="letter" placeholder="В свободной форме" aria-label="Поле для обращения"></textarea></label>
-        <button class="modal-close" type="button" aria-label="Закрыть pop-up">Закрыть</button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
         <button class="modal-button button" type="submit">Отправить</button>
       </form>
     </section>
