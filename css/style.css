@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff
+}
+
+/*насчет двух последних свойств не уверен,
+  т.к. они встречаются далеко не в 100% случаев*/
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  background-color: ##eeeeee;
+}
+
+.site-navigation,
+.order {
+  list-style: none;
+}
+
+.site-navigation a,
+.order a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.order a:hover,
+.order a:focus {
+  color: #fb565a;
+}
+
+.features-slide /*сначала разметить блок со слайдами*/
+
+
+.service-list {
+  list-style: none;
+}
+
+.service-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.service-item a {
+  color: #000000;
+}
