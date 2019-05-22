@@ -116,3 +116,7 @@ color: #ffffff;
   line-height: 18px;
   color: #283136;
 }
+
+.partners ul {
+  list-style: none;
+}
