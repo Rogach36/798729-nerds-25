@@ -131,10 +131,11 @@ a {
 .contact-address,
 .contact-phone a {
   font-size: 16px;
-font-weight: 400;
-line-height: 18px;
-color: #666666;
+  font-weight: 400;
+  line-height: 18px;
+  color: #666666;
 }
+
 /*а могу ли я не создавать целое перавило ради изменеия
 одного свойства, а просто добавить его в предыдущее. Т.е. text-decoration будет
 применятся к содержимому тега, к которому его применять нет нужды (с классом.contact-addres), но
@@ -145,13 +146,42 @@ color: #666666;
 
 .connect-button {
   font-size: 16px;
-font-weight: 500;
-line-height: 18px;
-text-transform: uppercase;
-color: #666666;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #666666;
 }
-
 
 .popup {
   display: none;
+}
+
+.social-button {
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+background-color: #e74246;
+}
+.social-button:active {
+  background-color: #d7373b;
+}
+
+.friendship {
+  font-size: 36px;
+font-weight: 700;
+line-height: 36px;
+color: #000000;
+}
+
+.discont {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #444444;
 }
