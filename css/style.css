@@ -3,13 +3,16 @@ body {
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   color: #000000;
-  background-color: #ffffff
+  background-color: #ffffff;
 }
 
-/*насчет двух последних свойств не уверен,
-  т.к. они встречаются далеко не в 100% случаев*/
 a {
   text-decoration: none;
+}
+
+.main-header,
+.features {
+  background-color: #eeeeee;
 }
 
 .main-navigation {
@@ -36,7 +39,7 @@ a {
   color: #fb565a;
 }
 
-.features-slide /*сначала разметить блок со слайдами*/
+/* .features-slide /*разметить блок со слайдами*/
 
 
 .service-list {
@@ -49,6 +52,16 @@ a {
   line-height: 30px;
 }
 
-.service-item a {
-  color: #000000;
+.service-item-slogan {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283136;
+}
+
+.order-button {
+font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+color: #ffffff;
 }
