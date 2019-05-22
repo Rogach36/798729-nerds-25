@@ -166,17 +166,18 @@ a {
 
 .social-button:hover,
 .social-button:focus {
-background-color: #e74246;
+  background-color: #e74246;
 }
+
 .social-button:active {
   background-color: #d7373b;
 }
 
 .friendship {
   font-size: 36px;
-font-weight: 700;
-line-height: 36px;
-color: #000000;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
 }
 
 .discont {
