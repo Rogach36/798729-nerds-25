@@ -79,3 +79,40 @@ color: #ffffff;
   line-height: 24px;
   color: #283136;
 }
+
+.ability-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.ability-list {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283136;
+}
+
+.progress-slogan {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.procent td {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10,06px;
+  color: #000000;
+}
+
+.value td {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #283136;
+}
