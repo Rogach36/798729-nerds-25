@@ -11,8 +11,7 @@ a {
 }
 
 .main-header,
-.features,
-.main-footer {
+.features {
   background-color: #eeeeee;
 }
 
@@ -41,8 +40,6 @@ a {
 }
 
 /* .features-slide /*разметить блок со слайдами*/
-
-
 .service-list {
   list-style: none;
 }
@@ -61,10 +58,10 @@ a {
 }
 
 .order-button {
-font-size: 16px;
-font-weight: 500;
-line-height: 18px;
-color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
 }
 
 .principle-title {
@@ -107,10 +104,11 @@ color: #ffffff;
 .procent td {
   font-size: 45px;
   font-weight: 700;
-  line-height: 10,06px;
+  line-height: 10, 06px;
   color: #000000;
 }
 
+/*возможно тут td и не нужен, без него тоже работает*/
 .value td {
   font-size: 16px;
   font-weight: 400;
@@ -122,8 +120,38 @@ color: #ffffff;
   list-style: none;
 }
 
+.contact-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contact-address,
+.contact-phone a {
+  font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+color: #666666;
+}
+/*а могу ли я не создавать целое перавило ради изменеия
+одного свойства, а просто добавить его в предыдущее. Т.е. text-decoration будет
+применятся к содержимому тега, к которому его применять нет нужды (с классом.contact-addres), но
+зато он срабоатет для тега со вторым классом */
+.contact-phone a {
+  text-decoration: none;
+}
+
+.connect-button {
+  font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+text-transform: uppercase;
+color: #666666;
+}
 
 
 .popup {
-display: none;
+  display: none;
 }
