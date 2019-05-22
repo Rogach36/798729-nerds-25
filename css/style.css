@@ -147,6 +147,20 @@ a {
   color: #283136;
 }
 
+.filter-cover:hover,
+ .filter-cover:focus {
+  color:  #283136;
+}
+
+.filter-cover:disabled {
+  color: #283136;
+  opacity: 0.3;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
 /*здесь завершается разметка страницы каталога*/
 .contact-name {
   font-size: 18px;
