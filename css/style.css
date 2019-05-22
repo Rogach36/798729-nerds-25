@@ -11,7 +11,8 @@ a {
 }
 
 .main-header,
-.features {
+.features,
+.main-footer {
   background-color: #eeeeee;
 }
 
@@ -119,4 +120,8 @@ color: #ffffff;
 
 .partners ul {
   list-style: none;
+}
+
+.popup {
+display: none;
 }
