@@ -161,6 +161,14 @@ a {
   list-style: none;
 }
 
+.catalog-item::before {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 40px;
+  opacity: 0.12;
+  background-color: red;
+}
 /*здесь завершается разметка страницы каталога*/
 .contact-name {
   font-size: 18px;
