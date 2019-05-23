@@ -57,15 +57,14 @@ a {
   color: #283136;
 }
 
-.order-button {
+.button {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  color: #ffffff;
 }
 
-.button {
-
+.order-button {
+  color: #ffffff;
 }
 
 .principle-title {
