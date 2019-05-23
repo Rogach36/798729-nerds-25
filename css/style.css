@@ -61,6 +61,7 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .order-button {
@@ -158,6 +159,19 @@ a {
 .filter-cover:disabled {
   color: #283136;
   opacity: 0.3;
+}
+
+.filter-button {
+  color: #000000;
+} /*в макете у этой кнопки в сотоянии покоя стили совпадают со стилями для всех остальных кнопок, а вот фон будет свой, т.е. правилоп онадобится для дальнейшей стилизации */
+
+.filter-button:hover,
+.filter-button:focus {
+color: #000000;
+}
+
+.filter-button:active {
+opacity: 0.3;
 }
 
 .catalog-list {
