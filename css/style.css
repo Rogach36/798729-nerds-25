@@ -194,9 +194,11 @@ color: #000000;
   font-weight: 400;
   line-height: 18px;
   color: #666666;
-
 }
 
+.button-price {
+  color: #ffffff;
+}
 /*здесь завершается разметка страницы каталога*/
 .contact-name {
   font-size: 18px;
