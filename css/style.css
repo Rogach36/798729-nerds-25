@@ -169,7 +169,7 @@ a {
   color: #000000;
 }
 
-.description-catalog-item h3 {
+.description-catalog-item .catalog-item-topic {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -177,8 +177,6 @@ a {
 }
 
 .description-catalog-item {
-  font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
   color: #666666;
 }
