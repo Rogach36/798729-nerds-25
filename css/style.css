@@ -20,7 +20,7 @@ a {
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
-  }
+}
 
 .site-navigation,
 .order {
@@ -67,42 +67,32 @@ a {
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
-  /* color: #ffffff; *//*раскомментировать цвет для надписей на кнопках*/
+  /* color: #ffffff; */
+  /*раскомментировать цвет для надписей на кнопках*/
 }
 
 .principle-title {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  }
+}
 
 .principle-explain {
-  font-size: 16px;
-  line-height: 24px;
   color: #283136;
 }
 
 .ability-title {
-  font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .ability-list {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
   color: #283136;
 }
 
 .progress-slogan {
-  font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .procent td {
@@ -152,8 +142,8 @@ a {
 }
 
 .filter-cover:hover,
- .filter-cover:focus {
-  color:  #283136;
+.filter-cover:focus {
+  color: #283136;
 }
 
 .filter-cover:disabled {
@@ -163,15 +153,16 @@ a {
 
 .filter-button {
   color: #000000;
-} /*в макете у этой кнопки в сотоянии покоя стили совпадают со стилями для всех остальных кнопок, а вот фон будет свой, т.е. правилоп онадобится для дальнейшей стилизации */
+}
 
+/*в макете у этой кнопки в сотоянии покоя стили совпадают со стилями для всех остальных кнопок, а вот фон будет свой, т.е. правилоп онадобится для дальнейшей стилизации */
 .filter-button:hover,
 .filter-button:focus {
-color: #000000;
+  color: #000000;
 }
 
 .filter-button:active {
-opacity: 0.3;
+  opacity: 0.3;
 }
 
 .catalog-list {
@@ -179,7 +170,7 @@ opacity: 0.3;
 }
 
 .catalog-item-topic a {
-color: #000000;
+  color: #000000;
 }
 
 .description-catalog-item h3 {
@@ -199,6 +190,7 @@ color: #000000;
 .button-price {
   color: #ffffff;
 }
+
 /*здесь завершается разметка страницы каталога*/
 .contact-name {
   font-size: 18px;
