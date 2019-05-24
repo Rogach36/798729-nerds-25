@@ -67,10 +67,11 @@ a {
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .order-button {
-  color: #ffffff;
+
 }
 
 .principle-title {
