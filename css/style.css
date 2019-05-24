@@ -141,7 +141,7 @@ a {
   color: #283136;
 }
 
-.filter-cover:disabled {
+.filter-input:disabled {
   color: #283136;
   opacity: 0.3;
 }
