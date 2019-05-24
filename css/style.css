@@ -141,13 +141,14 @@ a {
   color: #283136;
 }
 
-.filter-input:disabled {
+.filter-cover:disabled {
   color: #283136;
   opacity: 0.3;
 }
 
 .filter-button {
   color: #000000;
+  background-color: #eeeeee;
 }
 
 /*в макете у этой кнопки в сотоянии покоя стили совпадают со стилями для всех остальных кнопок, а вот фон будет свой, т.е. правилоп онадобится для дальнейшей стилизации */
