@@ -95,17 +95,14 @@ a {
   text-transform: uppercase;
 }
 
-.procent td {
+.procent {
   font-size: 45px;
   font-weight: 700;
-  line-height: 10, 06px;
-  color: #000000;
-}
-
+  line-height: 10px;
+  }
+/*после округления процент стал наползать на подпись*/
 /*возможно тут td и не нужен, без него тоже работает*/
-.value td {
-  font-size: 16px;
-  font-weight: 400;
+.value {
   line-height: 18px;
   color: #283136;
 }
