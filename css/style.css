@@ -193,6 +193,10 @@ a {
   text-transform: uppercase;
   color: #000000;
   }
+
+  .contact-phone a {
+    color: #666666;
+  }
 /* непонятный момент с селекторами contact-name и contacts*/
 
 
