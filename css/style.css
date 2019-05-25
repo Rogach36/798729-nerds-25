@@ -37,10 +37,12 @@ a {
 .main-navigation {
   display: flex;
   line-height: 30px;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-header-logo {
-/* display: block; /*не забыть удалить временное свойство*/ */
   width: 165px;
   height: 65px;
   padding-top: 49px;
@@ -56,6 +58,8 @@ a {
 }
 
 .site-navigation {
+display: flex;
+justify-content: space-between;
 width: 440px;
   margin-left: 202px;
   margin-top: 75px;
