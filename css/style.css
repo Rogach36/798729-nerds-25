@@ -3,21 +3,21 @@ body {
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   color: #000000;
-  /* background-color: #ffffff; */ /*вернуть фон после макросетки*/
+  /* background-color: #ffffff; */
+  /*вернуть фон после макросетки*/
   font-size: 16px;
   line-height: 24px;
 }
 
-
- body > * {
+body>* {
   background: rgba(255, 0, 0, 0.5);
 }
 
-body > * > * {
+body>*>* {
   background: rgba(225, 235, 223, 0.3);
 }
 
-body > * > * > *{
+body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 }
 
@@ -26,14 +26,16 @@ a {
 }
 
 .main-header {
-  margin-bottom: 18px; /*не очень понимаю зачем он нужен, если следующий блок элементов не размечен*/
+  margin-bottom: 18px;
+  /*не очень понимаю зачем он нужен, если следующий блок элементов не размечен*/
 }
 
 .main-header,
 .features {
   /* background-color: #eeeeee; */
-}/*вернуть фон после завершения разметки макросетки*/
+}
 
+/*вернуть фон после завершения разметки макросетки*/
 .main-navigation {
   display: flex;
   line-height: 30px;
@@ -47,8 +49,7 @@ a {
   height: 65px;
   padding-top: 49px;
   padding-left: 20px;
-  }
-
+}
 
 .site-navigation,
 .order {
@@ -58,17 +59,17 @@ a {
 }
 
 .site-navigation {
-display: flex;
-justify-content: space-between;
-width: 440px;
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
   margin-left: 202px;
   margin-top: 75px;
 }
 
 .order {
-width: 116px;
-margin-left: 245px;
-margin-top: 75px;
+  width: 116px;
+  margin-left: 245px;
+  margin-top: 75px;
 }
 
 .site-navigation a,
@@ -88,9 +89,28 @@ margin-top: 75px;
   color: #a6a6a6;
 }
 
+.content {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px; /*для центровки в main*/
+}
+
 /* .features-slide /*разметить блок со слайдами*/
+
+.services {
+  margin-bottom: 80px;
+}
+
 .service-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.service-item {
+  width: 300px;
 }
 
 .service-item-title {
@@ -111,6 +131,15 @@ margin-top: 75px;
   color: #ffffff;
 }
 
+.description-company {
+  display: flex;
+  justify-content: space-between;
+}
+
+.principle-company {
+  width: 660px;
+}
+
 .principle-title {
   font-size: 45px;
   font-weight: 500;
@@ -119,6 +148,14 @@ margin-top: 75px;
 
 .principle-explain {
   color: #283136;
+}
+
+.our-progress {
+width: 360px;
+}
+
+.progress-slogan {
+  margin-bottom: 45px;
 }
 
 .ability-title {
