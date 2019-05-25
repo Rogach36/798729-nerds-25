@@ -133,7 +133,9 @@ a {
 
 .description-company {
   display: flex;
+  width: 1160px;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .principle-company {
@@ -178,11 +180,14 @@ width: 360px;
   line-height: 10px;
 }
 
-/*после округления процент стал наползать на подпись*/
-/*возможно тут td и не нужен, без него тоже работает*/
 .value {
   line-height: 18px;
   color: #283136;
+}
+
+.partners {
+  display: flex;
+
 }
 
 .partners ul {
