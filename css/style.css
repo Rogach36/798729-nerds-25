@@ -267,10 +267,10 @@ heght: 700px;
 
 .filters {
   width: 280px;
-}
-
-.catalog {
-  width: 760px;
+  /* margin-bottom: 1383px; */
+  /*пробовал сделать отступ от фильтра до карты, как обсуждали
+  на консультации, но не очень понимаю как можно его сделать от flex-элемента,
+  у которого задана только ширина*/
 }
 
 .filter fieldset {
@@ -315,7 +315,25 @@ heght: 700px;
   opacity: 0.3;
 }
 /*----------------карточки товаров------------*/
+.catalog {
+  width: 760px;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 33px;
+  margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
 .catalog-list {
+display: flex;
+flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -335,6 +353,18 @@ heght: 700px;
   color: #666666;
 }
 
+.pagination-list {
+  display: flex;
+  padding: 0;
+  padding-bottom: 60px;
+  margin: 0;
+  list-style: none;
+}
+
+.pagination-list li {
+  width: 48px;
+
+}
 /*здесь завершается разметка страницы каталога*/
 /*----------------footer сайта (Контакты)--------------*/
 
