@@ -264,6 +264,10 @@ heght: 700px;
   width: 280px;
 }
 
+.catalog-cover-columns {
+  display: flex;
+}
+
 .filter fieldset {
   border: none;
 }
