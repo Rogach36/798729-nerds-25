@@ -34,15 +34,19 @@ a {
 .features {
   /* background-color: #eeeeee; */
 }
-
 /*вернуть фон после завершения разметки макросетки*/
+
+.container-center {
+width: 1160px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
 .main-navigation {
   display: flex;
   line-height: 30px;
   width: 1160px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+  }
 
 .main-header-logo {
   width: 165px;
@@ -89,21 +93,16 @@ a {
   color: #a6a6a6;
 }
 
-.content {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 20px; /*для центровки в main*/
-}
-
 /* .features-slide /*разметить блок со слайдами*/
 
 .services {
   margin-bottom: 80px;
-}
+  }
 
 .service-list {
   display: flex;
   justify-content: space-between;
+  width: 1100px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -186,8 +185,14 @@ width: 360px;
 }
 
 .partners {
-  display: flex;
 
+}
+
+.partners-list{
+  display: flex;
+  width: 1200px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
 }
 
 .partners ul {
