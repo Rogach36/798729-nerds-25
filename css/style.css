@@ -104,10 +104,13 @@ a {
 }
 
 .features {
+  width: 1180px;
+  height: 544px;
+  background-color: #888888;
   margin-bottom: 80px;
 }
+/*бокс со СЛАЙДАМИ*/
 
-/* .features-slide /*разметить блок со слайдами*/
 .services {
   margin-bottom: 80px;
 }
