@@ -38,26 +38,27 @@ a {
 
 .main-header {
   margin-bottom: 18px;
-  /*не очень понимаю зачем он нужен, если следующий блок элементов не размечен*/
 }
 
 .main-header,
 .features {
   /* background-color: #eeeeee; */
 }
-/*вернуть фон после завершения разметки макросетки*/
 
+/*вернуть фон после завершения разметки макросетки*/
 .container-center {
-width: 1160px;
-margin: 0 auto;
-padding: 0 20px;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-navigation {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   line-height: 30px;
   width: 1160px;
-  }
+}
 
 .main-header-logo {
   width: 165px;
@@ -83,7 +84,7 @@ padding: 0 20px;
 
 .order {
   width: 116px;
-  margin-left: 245px;
+  margin-left: auto;
   margin-top: 75px;
 }
 
@@ -105,10 +106,9 @@ padding: 0 20px;
 }
 
 /* .features-slide /*разметить блок со слайдами*/
-
 .services {
   margin-bottom: 80px;
-  }
+}
 
 .service-list {
   display: flex;
@@ -145,7 +145,8 @@ padding: 0 20px;
   display: flex;
   width: 1160px;
   justify-content: space-between;
-  margin-bottom: 70px;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  margin-bottom: 70px;
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .principle-company {
@@ -163,7 +164,7 @@ padding: 0 20px;
 }
 
 .our-progress {
-width: 360px;
+  width: 360px;
 }
 
 .progress-slogan {
@@ -198,7 +199,7 @@ width: 360px;
 .partners {
   width: 1160px;
   height: 182px;
-margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .partners-list {
@@ -208,15 +209,14 @@ margin-bottom: 80px;
   list-style: none;
   margin: 0;
   padding: 0;
-  }
-
+}
 
 .htmlacademy {
   padding-left: 31px;
 }
 
 .barber {
-padding-left: 96px;
+  padding-left: 96px;
 }
 
 .pink {
@@ -224,7 +224,7 @@ padding-left: 96px;
 }
 
 .mishka {
-padding-left: 121px;
+  padding-left: 121px;
 }
 
 /*отсюда начинается разметка страницы каталога*/
