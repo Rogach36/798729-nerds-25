@@ -188,15 +188,30 @@ width: 360px;
 
 }
 
-.partners-list{
+.partners-list {
   display: flex;
-  width: 1200px;
-  /* margin-left: 20px;
-  margin-right: 20px; */
+  width: 1160px;
+  /* justify-content:space-between; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+
+
+.htmlacademy {
+  padding-left: 31px;
 }
 
-.partners ul {
-  list-style: none;
+.barber {
+padding-left: 96px;
+}
+
+.pink {
+  padding-left: 103px;
+}
+
+.mishka {
+padding-left: 121px;
 }
 
 /*отсюда начинается разметка страницы каталога*/
