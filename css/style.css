@@ -54,11 +54,9 @@ a {
 
 .main-navigation {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   line-height: 30px;
-  width: 1160px;
-}
+  }
 
 .main-header-logo {
   width: 165px;
@@ -118,7 +116,6 @@ a {
 .service-list {
   display: flex;
   justify-content: space-between;
-  /* width: 1100px; */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -153,7 +150,6 @@ a {
 
 .description-company {
   display: flex;
-  width: 1160px;
   justify-content: space-between;
   margin-bottom: 70px;
   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -214,8 +210,6 @@ a {
 
 .partners-list {
   display: flex;
-  width: 1160px;
-  /* justify-content:space-between; */
   list-style: none;
   margin: 0;
   padding: 0;
