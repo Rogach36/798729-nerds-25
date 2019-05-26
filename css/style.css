@@ -28,7 +28,6 @@ body>*>* {
 body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 } */
-
 a {
   text-decoration: none;
 }
@@ -60,6 +59,7 @@ a {
   margin: 0 auto;
   padding: 0 20px;
 }
+
 /*---------------Навигация по сайту (меню) header-------------*/
 .main-navigation {
   display: flex;
@@ -112,6 +112,7 @@ a {
 .order a:active {
   color: #a6a6a6;
 }
+
 /*бокс со СЛАЙДАМИ*/
 .features {
   width: 1160px;
@@ -119,8 +120,8 @@ a {
   background-color: #888888;
   margin-bottom: 80px;
 }
-/*------------------------Услуги компании------------------*/
 
+/*------------------------Услуги компании------------------*/
 .services {
   margin-bottom: 80px;
 }
@@ -159,16 +160,16 @@ a {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 /*---------------------------Описание компании----------------*/
 .description-company {
   display: flex;
   margin-bottom: 70px;
-  }
+}
 
 .wrapper-about {
-heght: 700px;
+  heght: 700px;
   height: 450px;
-
 }
 
 .our-progress {
@@ -189,8 +190,6 @@ heght: 700px;
 .principle-explain {
   color: #283136;
 }
-
-
 
 .progress-slogan {
   margin-bottom: 45px;
@@ -220,6 +219,7 @@ heght: 700px;
   line-height: 18px;
   color: #283136;
 }
+
 /*------------------------Партнеры компании--------------*/
 .partners {
   width: 1160px;
@@ -261,10 +261,10 @@ heght: 700px;
   padding: 0;
   padding-top: 80px;
 }
+
 /*не понимаю, как растянуть серый фон как у
 main-navigation еще и на часть container*/
 /*--------фильтр-----------*/
-
 .catalog-cover-columns {
   display: flex;
   justify-content: space-between;
@@ -319,6 +319,7 @@ main-navigation еще и на часть container*/
 .filter-button:active {
   opacity: 0.3;
 }
+
 /*----------------карточки товаров------------*/
 .catalog {
   width: 760px;
@@ -335,8 +336,8 @@ main-navigation еще и на часть container*/
 }
 
 .catalog-list {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -368,16 +369,16 @@ flex-wrap: wrap;
 
 .pagination-list li {
   width: 48px;
-
 }
+
 /*здесь завершается разметка страницы каталога*/
 /*----------------footer сайта (Контакты)--------------*/
-
 .location {
   width: 1440px;
   height: 416px;
   background-color: #888888;
 }
+
 .contact-name {
   font-size: 18px;
   font-weight: 700;
@@ -415,7 +416,6 @@ flex-wrap: wrap;
   width: 257px;
   height: 80px;
   background-color: #f5f5f5;
-
 }
 
 .for-friends {
