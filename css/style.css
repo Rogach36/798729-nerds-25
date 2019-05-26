@@ -312,6 +312,12 @@ heght: 700px;
 
 /*здесь завершается разметка страницы каталога*/
 /*----------------footer сайта (Контакты)--------------*/
+
+.location {
+  width: 1440px;
+  height: 416px;
+  background-color: #888888;
+}
 .contact-name {
   font-size: 18px;
   font-weight: 700;
