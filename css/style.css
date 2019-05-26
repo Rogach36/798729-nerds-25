@@ -329,6 +329,8 @@ a {
 
 .social-connection {
 display: flex;
+padding-top: 70px;
+padding-bottom: 70px;
 }
 
 .footer-social {
