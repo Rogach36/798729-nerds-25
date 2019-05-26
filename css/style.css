@@ -260,12 +260,17 @@ heght: 700px;
 }
 /*--------фильтр-----------*/
 
+.catalog-cover-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .filters {
   width: 280px;
 }
 
-.catalog-cover-columns {
-  display: flex;
+.catalog {
+  width: 760px;
 }
 
 .filter fieldset {
@@ -309,7 +314,7 @@ heght: 700px;
 .filter-button:active {
   opacity: 0.3;
 }
-
+/*----------------карточки товаров------------*/
 .catalog-list {
   list-style: none;
 }
