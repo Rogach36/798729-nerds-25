@@ -254,6 +254,14 @@ heght: 700px;
   font-weight: 500;
   line-height: 55px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 117px;
+  padding: 0;
+}
+/*--------фильтр-----------*/
+
+.filters {
+  width: 280px;
 }
 
 .filter fieldset {
