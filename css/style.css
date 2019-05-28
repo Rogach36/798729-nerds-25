@@ -73,7 +73,6 @@ a {
 .main-header-logo {
   width: 170px;
   height: 75px;
-  /* padding-top: 49px; */
   padding-left: 40px;
 }
 
@@ -140,8 +139,7 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-}
+  }
 
 .service-item {
   width: 300px;
