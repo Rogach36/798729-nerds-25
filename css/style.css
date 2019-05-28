@@ -1,3 +1,5 @@
+
+
 html {
   box-sizing: border-box;
 }
@@ -11,20 +13,20 @@ body {
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   color: #000000;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   /*вернуть фон после макросетки*/
   font-size: 16px;
   line-height: 24px;
 }
 
-/* body>* {
+body>* {
   background: rgba(255, 0, 0, 0.5);
 }
 
 body>*>* {
   background: rgba(225, 235, 223, 0.3);
 }
-
+/*
 body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 } */
@@ -44,7 +46,8 @@ a {
 }
 
 .main-header {
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
+  padding-top: 50px;
 }
 
 .main-header,
@@ -55,7 +58,7 @@ a {
 
 /*вернуть фон после завершения разметки макросетки*/
 .container-center {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -64,14 +67,13 @@ a {
 .main-navigation {
   display: flex;
   align-items: flex-start;
-  width: 1160px;
   line-height: 30px;
 }
 
 .main-header-logo {
-  width: 165px;
-  height: 65px;
-  padding-top: 49px;
+  width: 170px;
+  height: 75px;
+  /* padding-top: 49px; */
   padding-left: 20px;
 }
 
@@ -87,13 +89,13 @@ a {
   justify-content: space-between;
   width: 440px;
   margin-left: 202px;
-  margin-top: 75px;
+  margin-top: 25px;
 }
 
 .order {
   width: 116px;
   margin-left: auto;
-  margin-top: 75px;
+  margin-top: 25px;
 }
 
 .site-navigation a,
