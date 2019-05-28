@@ -178,7 +178,7 @@ a {
 }
 
 .wrapper-about {
-  heght: 700px;
+  width: 660px;
   height: 450px;
 }
 
@@ -187,9 +187,9 @@ a {
   margin-left: auto;
 }
 
-.principle-company {
+/* .principle-company {
   width: 660px;
-}
+} */
 
 .principle-title {
   font-size: 45px;
