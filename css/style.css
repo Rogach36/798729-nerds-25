@@ -74,7 +74,7 @@ a {
   width: 170px;
   height: 75px;
   /* padding-top: 49px; */
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .site-navigation,
@@ -122,9 +122,10 @@ a {
 
 /*бокс со СЛАЙДАМИ*/
 .features {
-  width: 1160px;
+  width: 1440px;
   height: 544px;
   background-color: #888888;
+  padding-left: 140px;
   margin-bottom: 80px;
 }
 
