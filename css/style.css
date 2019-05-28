@@ -73,7 +73,7 @@ a {
 .main-header-logo {
   width: 170px;
   height: 75px;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .site-navigation,
@@ -124,7 +124,7 @@ a {
   width: 1440px;
   height: 544px;
   background-color: #888888;
-  padding-left: 140px;
+  padding-left: 120px;
   margin-bottom: 80px;
 }
 
@@ -135,7 +135,6 @@ a {
 
 .service-list {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -143,6 +142,11 @@ a {
 
 .service-item {
   width: 300px;
+}
+
+.service-list .service-item:nth-child(2),
+.service-list .service-item:nth-child(3) {
+  margin-left: 100px;
 }
 
 .service-item:nth-child(3) {
