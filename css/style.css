@@ -86,10 +86,15 @@ a {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
   width: 440px;
   margin-left: 202px;
   margin-top: 25px;
+}
+
+.menu-clients,
+.menu-shop,
+.menu-contacts {
+  margin-left: 50px;
 }
 
 .order {
