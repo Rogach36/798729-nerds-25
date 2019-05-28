@@ -238,6 +238,18 @@ a {
   padding: 0;
 }
 
+.partners-list li:nth-child(2) {
+  margin-left: 96px;
+}
+
+.partners-list li:nth-child(3) {
+  margin-left: 103px;
+}
+
+.partners-list li:nth-child(4) {
+  margin-left: 121px;
+}
+
 .htmlacademy {
   padding-left: 31px;
 }
