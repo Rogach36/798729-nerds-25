@@ -245,8 +245,8 @@ img {
 
 /*отсюда начинается разметка страницы каталога*/
 .head-name {
-  padding: 0;
-  padding-top: 80px;
+  padding-top: 83px;
+  padding-bottom: 117px;
 }
 
 .page-title {
@@ -255,8 +255,7 @@ img {
   line-height: 55px;
   text-align: center;
   margin: 0;
-  margin-bottom: 117px;
-}
+  }
 
 /*не понимаю, как растянуть серый фон как у
 main-navigation еще и на часть container*/
