@@ -17,18 +17,18 @@ body {
   line-height: 24px;
 }
 
-/* body>* {
+body>* {
   background: rgba(255, 0, 0, 0.5);
 }
 
 body>*>* {
   background: rgba(225, 235, 223, 0.3);
-} */
+}
 
-/*
 body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
-} */
+}
+
 a {
   text-decoration: none;
 }
@@ -38,13 +38,15 @@ img {
   height: auto;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -260,7 +262,6 @@ img {
   padding-top: 80px;
 }
 
-
 .page-title {
   font-size: 55px;
   font-weight: 500;
@@ -268,7 +269,6 @@ img {
   text-align: center;
   margin: 0;
   margin-bottom: 117px;
-
 }
 
 /*не понимаю, как растянуть серый фон как у
