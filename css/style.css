@@ -79,7 +79,7 @@ img {
 .main-header-logo {
   width: 170px;
   height: 75px;
-  }
+}
 
 .site-navigation,
 .order {
@@ -178,7 +178,7 @@ img {
 
 .wrapper-about {
   width: 660px;
-  }
+}
 
 .our-progress {
   width: 360px;
@@ -237,16 +237,10 @@ img {
   padding: 0;
 }
 
-.partners-list li:nth-child(2) {
-  margin-left: 96px;
-}
-
-.partners-list li:nth-child(3) {
-  margin-left: 103px;
-}
-
-.partners-list li:nth-child(4) {
-  margin-left: 121px;
+.partners-list li {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*отсюда начинается разметка страницы каталога*/
@@ -415,7 +409,7 @@ main-navigation еще и на часть container*/
 .footer-social {
   display: flex;
   width: 257px;
-  }
+}
 
 .for-friends {
   width: 563px;
