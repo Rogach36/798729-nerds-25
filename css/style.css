@@ -72,6 +72,7 @@ img {
 /*---------------Навигация по сайту (меню) header-------------*/
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   line-height: 30px;
 }
 
