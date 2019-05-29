@@ -370,8 +370,6 @@ main-navigation еще и на часть container*/
 /*здесь завершается разметка страницы каталога*/
 /*----------------footer сайта (Контакты)--------------*/
 .location {
-  width: 1440px;
-  height: 416px;
   background-color: #888888;
 }
 
