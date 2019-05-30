@@ -17,7 +17,7 @@ body {
   line-height: 24px;
 }
 
-/* body>* {
+body>* {
   background: rgba(255, 0, 0, 0.5);
 }
 
@@ -27,7 +27,7 @@ body>*>* {
 
 body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
-} */
+}
 
 a {
   text-decoration: none;
@@ -102,14 +102,36 @@ img {
 }
 
 .order {
-  width: 116px;
-  margin-left: auto;
+display: flex;
+flex-wrap: wrap;
+  width: 125px;/*было 116рх*/
+  /* margin-left: auto; */
+  margin-left: 105px;
   margin-top: 25px;
 }
+
+.order .order-link {
+  position: relative;
+  padding-left: 20px;
+  }
+
+  .order-link::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    /* background-color: #ff0000; */
+    left: -20px;
+    top: 7px;
+    background-image: url("img/icons/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 
 .site-navigation a,
 .order a {
   color: #000000;
+  display: block;/*задал для ссылок из-за работы с иконкой корзины*/
 }
 
 .site-navigation a:hover,
