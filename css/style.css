@@ -224,6 +224,39 @@ background-color: #00ca74;
 background-color: #efc84a;
 }
 
+.button:hover,
+.button:focus {
+background-color: #e74246;
+}
+
+.button:active {
+  box-shadow: inset 0 3px 0 0 #c13135;
+  background-color: #d7373b;
+  color:#e48789;
+}
+
+.order-button-color1:hover,
+.order-button-color1:focus {
+background-color: #00bc6c;
+}
+
+.order-button-color1:active {
+  box-shadow: inset 0 3px 0 0 #009958;
+  background-color: #00aa62;
+  color:#74c69c;
+}
+
+.order-button-color2:hover,
+.order-button-color2:focus {
+background-color: #eab534;
+}
+
+.order-button-color2:active {
+  box-shadow: inset 0 3px 0 0 #ce961f;
+  background-color: #e5a722;
+  color:#edc47f;
+}
+
 /*---------------------------Описание компании----------------*/
 .description-company {
   display: flex;
@@ -311,8 +344,6 @@ background-color: #efc84a;
   margin: 0;
   }
 
-/*не понимаю, как растянуть серый фон как у
-main-navigation еще и на часть container*/
 /*--------фильтр-----------*/
 .catalog-cover-columns {
   display: flex;
@@ -321,11 +352,7 @@ main-navigation еще и на часть container*/
 
 .filters {
   width: 280px;
-  /* margin-bottom: 1383px; */
-  /*пробовал сделать отступ от фильтра до карты, как обсуждали
-  на консультации, но не очень понимаю как можно его сделать от flex-элемента,
-  у которого задана только ширина*/
-}
+  }
 
 .filter fieldset {
   border: none;
