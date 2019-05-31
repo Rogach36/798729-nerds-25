@@ -205,6 +205,23 @@ flex-wrap: wrap;
   color: #ffffff;
   padding-top: 17px;
   padding-bottom: 17px;
+  background-color: #fb565a;
+  border-radius: 5px;
+}
+
+.order-button {
+display: inline-block;
+width: 160px;
+padding-left: 40px;
+padding-right: 40px;
+}
+
+.order-button-color1 {
+background-color: #00ca74;
+}
+
+.order-button-color2 {
+background-color: #efc84a;
 }
 
 /*---------------------------Описание компании----------------*/
