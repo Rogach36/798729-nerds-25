@@ -198,10 +198,13 @@ flex-wrap: wrap;
 }
 
 .button {
+  display: inline-block;
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 /*---------------------------Описание компании----------------*/
