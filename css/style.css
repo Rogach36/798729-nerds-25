@@ -276,6 +276,7 @@ background-color: #eab534;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  margin-bottom: 20px;/*пересчитал получилось 14px, но на вид меньше, чем на маете*/
 }
 
 .principle-explain {
@@ -289,6 +290,7 @@ background-color: #eab534;
 .ability-title {
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .ability-list {
