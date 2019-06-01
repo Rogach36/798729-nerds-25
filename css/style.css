@@ -569,6 +569,10 @@ background-position: 0 0;
   background-color: #e1e1e1;
 }
 
+.social-button:active path {
+  fill: #e37376;
+}
+
 /* .social-button:hover,
 .social-button:focus {
   background-color: #e74246;
