@@ -24,7 +24,6 @@ body {
 body>*>* {
   background: rgba(225, 235, 223, 0.3);
 } */
-
 body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 }
@@ -36,7 +35,6 @@ body>*>*>*>*>* {
 body>*>*>*>*>*>* {
   background: rgba(150, 110, 110, 0.3);
 }
-
 
 a {
   text-decoration: none;
@@ -111,9 +109,10 @@ img {
 }
 
 .order {
-display: flex;
-flex-wrap: wrap;
-  width: 125px;/*было 116рх*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 125px;
+  /*было 116рх*/
   /* было margin-left: auto; */
   margin-left: 105px;
   margin-top: 25px;
@@ -122,25 +121,26 @@ flex-wrap: wrap;
 .order .order-link {
   position: relative;
   padding-left: 20px;
-  }
+}
 
-  .order-link::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    /* background-color: #ff0000; */
-    left: -20px;
-    top: 7px;
-    background-image: url("img/icons/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+.order-link::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  /* background-color: #ff0000; */
+  left: -20px;
+  top: 7px;
+  background-image: url("img/icons/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 .site-navigation a,
 .order a {
   color: #000000;
-  display: block;/*задал для ссылок из-за работы с иконкой корзины*/
+  display: block;
+  /*задал для ссылок из-за работы с иконкой корзины*/
 }
 
 .site-navigation a:hover,
@@ -210,51 +210,51 @@ flex-wrap: wrap;
 }
 
 .order-button {
-display: inline-block;
-width: 160px;
-padding-left: 40px;
-padding-right: 40px;
+  display: inline-block;
+  width: 160px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .order-button-color1 {
-background-color: #00ca74;
+  background-color: #00ca74;
 }
 
 .order-button-color2 {
-background-color: #efc84a;
+  background-color: #efc84a;
 }
 
 .button:hover,
 .button:focus {
-background-color: #e74246;
+  background-color: #e74246;
 }
 
 .button:active {
   box-shadow: inset 0 3px 0 0 #c13135;
   background-color: #d7373b;
-  color:#e48789;
+  color: #e48789;
 }
 
 .order-button-color1:hover,
 .order-button-color1:focus {
-background-color: #00bc6c;
+  background-color: #00bc6c;
 }
 
 .order-button-color1:active {
   box-shadow: inset 0 3px 0 0 #009958;
   background-color: #00aa62;
-  color:#74c69c;
+  color: #74c69c;
 }
 
 .order-button-color2:hover,
 .order-button-color2:focus {
-background-color: #eab534;
+  background-color: #eab534;
 }
 
 .order-button-color2:active {
   box-shadow: inset 0 3px 0 0 #ce961f;
   background-color: #e5a722;
-  color:#edc47f;
+  color: #edc47f;
 }
 
 /*---------------------------Описание компании----------------*/
@@ -276,14 +276,11 @@ background-color: #eab534;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  margin-bottom: 20px;/*пересчитал получилось 14px, но на вид меньше, чем на макете*/
+  margin-bottom: 27px;
 }
 
 .principle-explain {
   color: #283136;
-}
-
-.progress-slogan {
   margin-bottom: 45px;
 }
 
@@ -296,17 +293,17 @@ background-color: #eab534;
 .ability-list {
   color: #283136;
   display: block;
-margin: 0;
-padding: 0;
-list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .ability-list li {
-margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .picture-nerds {
-margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .progress-slogan {
@@ -315,12 +312,16 @@ margin-bottom: 35px;
 }
 
 .procent {
+  display: table;
   font-size: 45px;
   font-weight: 700;
   line-height: 10px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .value {
+  display: table;
   line-height: 18px;
   color: #283136;
 }
@@ -356,7 +357,7 @@ margin-bottom: 35px;
   line-height: 55px;
   text-align: center;
   margin: 0;
-  }
+}
 
 /*--------фильтр-----------*/
 .catalog-cover-columns {
@@ -366,7 +367,7 @@ margin-bottom: 35px;
 
 .filters {
   width: 280px;
-  }
+}
 
 .filter fieldset {
   border: none;
