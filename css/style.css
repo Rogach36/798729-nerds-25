@@ -538,8 +538,36 @@ background-position: 0 0;
   padding-right: 44px;
 }
 
+/*
 .popup {
   display: none;
+}
+*/
+
+-----------/* Стили формы*/-----------------
+.popup-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  font-size: 45px;
+  line-height: 45px;
+  }
+
+.popup-title {
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.popup-form label {
+  display: inline-block;
+font-weight: 700;
+}
+
+.name {
+  width: 360px;
+  padding-left: 16px
+  padding-right: auto;
+  margin-left: 100px;
 }
 
 .social-connection {
