@@ -344,6 +344,15 @@ img {
   width: 260px;
   margin-left: auto;
   margin-right: auto;
+  opacity: 0.2;
+}
+
+.partners-list li:hover {
+  opacity: 1;
+}
+
+.partners-list li:active {
+  opacity: 0.1;
 }
 
 /*отсюда начинается разметка страницы каталога*/
