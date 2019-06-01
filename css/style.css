@@ -276,7 +276,7 @@ background-color: #eab534;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  margin-bottom: 20px;/*пересчитал получилось 14px, но на вид меньше, чем на маете*/
+  margin-bottom: 20px;/*пересчитал получилось 14px, но на вид меньше, чем на макете*/
 }
 
 .principle-explain {
@@ -290,11 +290,19 @@ background-color: #eab534;
 .ability-title {
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .ability-list {
   color: #283136;
+  display: block;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.ability-list li {
+margin-bottom: 24px;
 }
 
 .progress-slogan {
