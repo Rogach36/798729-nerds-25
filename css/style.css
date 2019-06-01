@@ -476,6 +476,7 @@ img {
 /*----------------footer сайта (Контакты)--------------*/
 .location {
   background-color: #888888;
+  background-image: url(img/map/merged-map.png);/*не работает*/
 }
 
 .contact-name {
@@ -495,9 +496,10 @@ img {
   color: #666666;
 }
 
-.button-connect {
+/* .button-connect {
   color: #666666;
-}
+} */
+/*цвет был задан временно*/
 
 .popup {
   display: none;
@@ -512,6 +514,7 @@ img {
 .footer-social {
   display: flex;
   width: 257px;
+  align-items: center;
 }
 
 .for-friends {
@@ -520,6 +523,9 @@ img {
 }
 
 .social-button {
+display: flex;
+align-items: center;
+justify-content: center;
   width: 79px;
   height: 79px;
   border-radius: 50%;
