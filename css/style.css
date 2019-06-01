@@ -131,7 +131,7 @@ img {
   /* background-color: #ff0000; */
   left: -20px;
   top: 7px;
-  background-image: url("img/icons/icon-cart.svg");
+  background-image: url("../img/icons/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -476,7 +476,27 @@ img {
 /*----------------footer сайта (Контакты)--------------*/
 .location {
   background-color: #888888;
-  background-image: url(img/map/merged-map.png);/*не работает*/
+  background-image: url(../img/map/merged-map.png);
+  background-position: 50% 50%;
+  }
+
+.wrapper-contacts {
+  width: 319px;
+  background-color: inherit;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 54px;
+  padding-bottom: 47px;
+
+}
+
+.contacts {
+  line-height: 18px;
+  color: #666666;
+  /* margin-top: 54px;
+  margin-bottom: 54px;
+  width: 319px; */
+
 }
 
 .contact-name {
@@ -485,21 +505,21 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
-}
+  padding-bottom: 32px;
+  }
 
-.contacts {
-  line-height: 18px;
-  color: #666666;
-}
+.contact-address {
+  padding-bottom: 17px;
+  }
 
 .contact-phone a {
   color: #666666;
+
 }
 
-/* .button-connect {
-  color: #666666;
-} */
-/*цвет был задан временно*/
+.button-connect {
+  margin-top: 35px;
+}
 
 .popup {
   display: none;
@@ -523,28 +543,29 @@ img {
 }
 
 .social-button {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 79px;
   height: 79px;
   border-radius: 50%;
   background-color: #e1e1e1;
 }
 
-.social-button:hover,
+/* .social-button:hover,
 .social-button:focus {
   background-color: #e74246;
 }
 
 .social-button:active {
   background-color: #d7373b;
-}
-
+} */
+/*лишние стили, на соцкнопки действуют общие стили*/
 .friendship {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
+  margin-bottom: 10px;
 }
 
 .discont {
