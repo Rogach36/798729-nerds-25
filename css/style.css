@@ -305,6 +305,10 @@ img {
 /* list-style-image: url(../img/partners/line.png); */
 }
 
+.ability-list .red-line:last-child {
+  margin-bottom: 0;
+}
+
 .red-line::before {
 content: "";
 position: absolute;
@@ -547,6 +551,7 @@ background-position: 0 0;
 -----------/* Стили формы*/-----------------
 .popup-form {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 960px;
   font-size: 45px;
