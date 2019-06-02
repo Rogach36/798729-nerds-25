@@ -492,16 +492,22 @@ padding-left: 36px;
 .filter-button {
   color: #000000;
   background-color: #eeeeee;
+  width: 260px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /*в макете у этой кнопки в сотоянии покоя стили совпадают со стилями для всех остальных кнопок, а вот фон будет свой, т.е. правилоп онадобится для дальнейшей стилизации */
 .filter-button:hover,
 .filter-button:focus {
   color: #000000;
+  background-color: #dfdfdf;
 }
 
 .filter-button:active {
   opacity: 0.3;
+  color: #959595;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
 /*----------------карточки товаров------------*/
