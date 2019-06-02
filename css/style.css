@@ -45,7 +45,7 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -302,7 +302,7 @@ img {
   margin-bottom: 24px;
   position: relative;
   padding-left: 35px;
-/* list-style-image: url(../img/partners/line.png); */
+  /* list-style-image: url(../img/partners/line.png); */
 }
 
 .ability-list .red-line:last-child {
@@ -310,15 +310,15 @@ img {
 }
 
 .red-line::before {
-content: "";
-position: absolute;
-background-image: url("../img/partners/line.png");
-width: 26px;
-height: 26px;
-top: 10px;
-left: 0px;
-background-repeat: no-repeat;
-background-position: 0 0;
+  content: "";
+  position: absolute;
+  background-image: url("../img/partners/line.png");
+  width: 26px;
+  height: 26px;
+  top: 10px;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .picture-nerds {
@@ -414,16 +414,16 @@ background-position: 0 0;
 }
 
 .filter ul {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
   list-style: none;
   line-height: 20px;
   color: #283136;
 }
 
 .filter-option {
-margin-bottom: 20px;
-padding-left: 36px;
+  margin-bottom: 20px;
+  padding-left: 36px;
 }
 
 .filter-option label {
@@ -432,7 +432,7 @@ padding-left: 36px;
   cursor: pointer;
 }
 
-.filter-input-radio + label::before {
+.filter-input-radio+label::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -443,7 +443,7 @@ padding-left: 36px;
   border-radius: 50%;
 }
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked+label::after {
   content: "";
   position: absolute;
   width: 7px;
@@ -454,7 +454,7 @@ padding-left: 36px;
   border-radius: 50%;
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox+label::before {
   content: "";
   position: absolute;
   width: 23px;
@@ -464,7 +464,7 @@ padding-left: 36px;
   top: -4px;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
   width: 8px;
@@ -476,15 +476,14 @@ padding-left: 36px;
   /* png временно, поставить svg */
   background-repeat: no-repeat;
   background-position: 0 0;
-  }
+}
 
-
-.filter-input:hover + label,
-.filter-input:focus + label {
+.filter-input:hover+label,
+.filter-input:focus+label {
   color: #283136;
 }
 
-.filter-input:hover + label {
+.filter-input:hover+label {
   color: #283136;
   opacity: 0.3;
 }
@@ -497,7 +496,6 @@ padding-left: 36px;
   padding-bottom: 16px;
 }
 
-/*в макете у этой кнопки в сотоянии покоя стили совпадают со стилями для всех остальных кнопок, а вот фон будет свой, т.е. правилоп онадобится для дальнейшей стилизации */
 .filter-button:hover,
 .filter-button:focus {
   color: #000000;
@@ -568,8 +566,9 @@ padding-left: 36px;
   padding-top: 54px;
   padding-bottom: 54px;
   background-image: url(../img/map/merged-map.png);
-  background-position: 50% 50%;#
-  }
+  background-position: 50% 50%;
+  #
+}
 
 .wrapper-contacts {
   width: 319px;
@@ -578,7 +577,6 @@ padding-left: 36px;
   padding-right: 50px;
   padding-top: 54px;
   padding-bottom: 47px;
-
 }
 
 .contacts {
@@ -587,7 +585,6 @@ padding-left: 36px;
   /* margin-top: 54px;
   margin-bottom: 54px;
   width: 319px; */
-
 }
 
 .contact-name {
@@ -597,32 +594,28 @@ padding-left: 36px;
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 27px;
-  }
+}
 
 .contact-address {
   margin-bottom: 17px;
-  }
+}
 
 .contact-phone a {
   color: #666666;
   margin-bottom: 35px;
-
 }
 
 .button-connect {
   margin-top: 35px;
-  padding-left:44px;
+  padding-left: 44px;
   padding-right: 44px;
 }
-/*--------форма обратной связи начало---------*/
-.popup {
-  display: none;
-}
 
-.popup-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+/*--------форма обратной связи начало---------*/
+/* .popup {
+  display: none;
+} */
+/*
 
   }
 
@@ -639,16 +632,69 @@ padding-left: 36px;
   width: 360px;
 }
 
+
+} */
+.popup {
+  width: 960px;
+}
+
+.popup-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  border: solid 1px #f5f5f5;
+}
+
+.name input,
+.mail input {
+  display: block;
+  margin-top: 35px;
+  margin-left: 100px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  padding-left: 16px;
+}
+
+.mail input {
+  margin-right: 100px;
+}
+
+.letter textarea {
+  display: block;
+  margin-top: 35px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 17px;
+  padding-bottom: 86px;
+  padding-right: 596px;
+  padding-left: 16px;
+}
+
 .name {
   width: 360px;
-  padding-left: 16px
-  padding-right: auto;
   margin-left: 100px;
 }
+
+.mail {
+  width: 360px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.letter {
+  /* не работает width: 100%, поле не уходит на нижнюю строку */
+  width: 100%;
+  margin-left: 100px;
+}
+
+.modal-button {
+  width: 260px;
+}
+
 /*-----------форма обратной связи конец-------*/
-
-
-
 .social-connection {
   display: flex;
   padding-top: 70px;
