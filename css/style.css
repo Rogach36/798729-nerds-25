@@ -495,8 +495,10 @@ background-position: 0 0;
 /*----------------footer сайта (Контакты)--------------*/
 .location {
   background-color: #888888;
+  padding-top: 54px;
+  padding-bottom: 54px;
   background-image: url(../img/map/merged-map.png);
-  background-position: 50% 50%;
+  background-position: 50% 50%;#
   }
 
 .wrapper-contacts {
@@ -524,15 +526,16 @@ background-position: 0 0;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
-  padding-bottom: 32px;
+  margin-bottom: 27px;
   }
 
 .contact-address {
-  padding-bottom: 17px;
+  margin-bottom: 17px;
   }
 
 .contact-phone a {
   color: #666666;
+  margin-bottom: 35px;
 
 }
 
@@ -541,31 +544,29 @@ background-position: 0 0;
   padding-left:44px;
   padding-right: 44px;
 }
-
-/*
+/*--------форма обратной связи начало---------*/
 .popup {
   display: none;
 }
-*/
 
------------/* Стили формы*/-----------------
 .popup-form {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 960px;
-  font-size: 45px;
-  line-height: 45px;
+  justify-content: space-between;
+
   }
 
 .popup-title {
   margin: 0;
-  margin-bottom: 48px;
+  margin-top: 68px;
+  margin-bottom: 10px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
 }
 
-.popup-form label {
-  display: inline-block;
-font-weight: 700;
+.appointment-item {
+  width: 360px;
 }
 
 .name {
@@ -574,6 +575,9 @@ font-weight: 700;
   padding-right: auto;
   margin-left: 100px;
 }
+/*-----------форма обратной связи конец-------*/
+
+
 
 .social-connection {
   display: flex;
