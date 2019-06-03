@@ -517,6 +517,8 @@ img {
   width: 360px;
   margin-bottom: 33px;
   margin-right: 40px;
+  position: relative;
+  text-align: center;
 }
 
 .catalog-item:nth-child(2n) {
@@ -540,11 +542,39 @@ img {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+.description-catalog-item p {
+  margin-bottom: 28px;
+  margin-right: 67px;
+  margin-left: 69px;
+
 }
 
 .description-catalog-item {
   line-height: 18px;
   color: #666666;
+  display: none;
+  background-color: #eeeeee;
+  position: absolute;
+  width: 360px;
+  top: 352px;
+}
+
+.pinc-card {
+  position: absolute;
+  top: 338px;
+}
+
+.button-price {
+margin-bottom: 40px;
+width: 200px;
+}
+
+.catalog-item:hover .description-catalog-item {
+    display: block;
 }
 
 .pagination-list {
@@ -612,16 +642,13 @@ img {
 }
 
 /*--------форма обратной связи начало---------*/
-/* .popup {
+.popup {
   display: none;
-} */
-/*
-
-  }
+}
 
 
 
-} */
+}
 .popup {
   width: 960px;
   position: absolute;
