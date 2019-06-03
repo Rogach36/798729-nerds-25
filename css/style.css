@@ -88,6 +88,15 @@ img {
   height: 75px;
 }
 
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
 .site-navigation,
 .order {
   list-style: none;
@@ -547,7 +556,7 @@ img {
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 20px;
-  }
+}
 
 .description-catalog-item p {
   margin-bottom: 28px;
@@ -571,8 +580,8 @@ img {
 }
 
 .button-price {
-margin-bottom: 40px;
-width: 200px;
+  margin-bottom: 40px;
+  width: 200px;
 }
 
 .button-price:active {
@@ -580,8 +589,7 @@ width: 200px;
 }
 
 .catalog-item:hover .description-catalog-item {
-    display: block;
-
+  display: block;
 }
 
 .catalog-item:hover {
@@ -600,7 +608,7 @@ width: 200px;
   top: -28px;
   left: 18px;
   box-shadow: 26px 0 0 0 #ffffff,
-  52px 0 0 0 #ffffff;
+    52px 0 0 0 #ffffff;
 }
 
 .pagination-list {
@@ -613,6 +621,7 @@ width: 200px;
 
 .pagination-list li {
   width: 48px;
+  height: 48px;
 }
 
 /*здесь завершается разметка страницы каталога*/
@@ -671,10 +680,8 @@ width: 200px;
 .popup {
   display: none;
 }
-
-
-
 }
+
 .popup {
   width: 960px;
   position: absolute;
@@ -759,8 +766,10 @@ width: 200px;
   position: absolute;
   left: 870px;
   bottom: 390px;
-  background-color: red; /*временно цвет*/
+  background-color: red;
+  /*временно цвет*/
 }
+
 /*-----------форма обратной связи конец-------*/
 .social-connection {
   display: flex;
