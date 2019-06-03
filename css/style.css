@@ -472,8 +472,8 @@ img {
   background-color: #b8b8b8;
   left: -27px;
   top: 3px;
-  background-image: url(../img/icons/checkbox-on.png);
-  /* png временно, поставить svg */
+  background-image: url(../img/icons/icon-filter/icon-checkbox-on.svg);
+  /* не работает */
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -519,6 +519,9 @@ img {
   margin-right: 40px;
   position: relative;
   text-align: center;
+  border-top: 40px solid #eaeaea;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .catalog-item:nth-child(2n) {
@@ -550,7 +553,6 @@ img {
   margin-bottom: 28px;
   margin-right: 67px;
   margin-left: 69px;
-
 }
 
 .description-catalog-item {
@@ -573,8 +575,32 @@ margin-bottom: 40px;
 width: 200px;
 }
 
+.button-price:active {
+  color: #ffffff;
+}
+
 .catalog-item:hover .description-catalog-item {
     display: block;
+
+}
+
+.catalog-item:hover {
+  border-top: 40px solid #4d4d4d;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.catalog-item::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: -28px;
+  left: 18px;
+  box-shadow: 26px 0 0 0 #ffffff,
+  52px 0 0 0 #ffffff;
 }
 
 .pagination-list {
