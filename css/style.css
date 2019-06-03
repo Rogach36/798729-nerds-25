@@ -619,23 +619,16 @@ img {
 
   }
 
-.popup-title {
-  margin: 0;
-  margin-top: 68px;
-  margin-bottom: 10px;
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 45px;
-}
-
-.appointment-item {
-  width: 360px;
-}
 
 
 } */
 .popup {
   width: 960px;
+  position: absolute;
+  bottom: -850px;
+  left: 450px;
+  box-shadow: 0 15px 20px 10px #5e5f5f;
+  background-color: #ffffff;
 }
 
 .popup-form {
@@ -645,55 +638,76 @@ img {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-  border: solid 1px #f5f5f5;
+  position: relative;
 }
 
-.name input,
-.mail input {
-  display: block;
-  margin-top: 35px;
+.popup-title {
+  margin: 0;
+  margin-top: 68px;
+  margin-bottom: 38px;
   margin-left: 100px;
-  padding-top: 17px;
-  padding-bottom: 18px;
-  padding-left: 16px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
 }
 
-.mail input {
-  margin-right: 100px;
-}
-
-.letter textarea {
-  display: block;
-  margin-top: 35px;
-  margin-left: 100px;
-  margin-right: 100px;
-  padding-top: 17px;
-  padding-bottom: 86px;
-  padding-right: 596px;
-  padding-left: 16px;
-}
-
-.name {
+.name,
+.mail,
+.letter {
   width: 360px;
+  margin: 0;
+  margin-bottom: 35px;
+  margin: 0;
   margin-left: 100px;
-}
-
-.mail {
-  width: 360px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .letter {
-  /* не работает width: 100%, поле не уходит на нижнюю строку */
-  width: 100%;
-  margin-left: 100px;
+  margin-bottom: 47px;
 }
 
-.modal-button {
+.name input,
+.mail input,
+.letter textarea {
+  display: block;
+  margin-top: 10px;
+  padding-left: 14px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+
+.name input {
+  /* padding-right: 239px; */
+  width: 260px;
+  margin-bottom: 32px;
+}
+
+.mail input {
+  /* padding-right: 195px; */
   width: 260px;
 }
 
+.letter textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 83px;
+  /* padding-right: 291px; */
+}
+
+.modal-button {
+  display: block;
+  width: 260px;
+}
+
+.wrapper-position {
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  left: 870px;
+  bottom: 390px;
+  background-color: red; /*временно цвет*/
+}
 /*-----------форма обратной связи конец-------*/
 .social-connection {
   display: flex;
