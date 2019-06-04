@@ -117,6 +117,20 @@ img {
   margin-left: 50px;
 }
 
+.menu-navigation-current {
+  position: relative;
+}
+
+.menu-navigation-current::after {
+contain: "";
+position: absolute;
+background-color: #fb565a;
+height: 3px;
+bottom: 12px;
+right: 1px;
+left: 1px;
+} /*попробовал сделать подчеркивание в меню для нахождения на текущей странице*/
+
 .order {
   display: flex;
   flex-wrap: wrap;
@@ -613,15 +627,54 @@ img {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
-  padding-bottom: 60px;
   margin: 0;
+  padding-bottom: 60px;
   list-style: none;
 }
 
-.pagination-list li {
-  width: 48px;
-  height: 48px;
+.pagination-item {
+  width: 49px;
+  height: 49px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+  width: 145px;
+  }
+
+.pagination-item a {
+  display: block;
+  padding-left: 19px;
+  padding-right: 22px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  color: inherit;
+}
+
+.pagination-item:last-child a {
+  text-align: center;
+}
+
+.pagination-item-current {
+  border: solid 3px #dbdbdb;
+}
+
+.pagination-item:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
+  color: #a9a9a9;
+}
+
+.pagination-item a:active {
+
 }
 
 /*здесь завершается разметка страницы каталога*/
