@@ -179,32 +179,98 @@ left: 1px;
 
 /*бокс со СЛАЙДАМИ*/
 .features {
-  background-color: #888888;
-  padding-left: 120px;
+position: relative;
+  background-color: #eeeeee;
   margin-bottom: 80px;
+}
+
+.sliders-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  width: 160px;
+  height: 18px;
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.sliders-controls .active::before {
+
+}
+
+.sliders-controls i {
+position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sliders-controls i::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .features-slide {
   width: 1160px;
-  padding-top: 70px;
-  border: solid 1px black; /*рамка временно, удалить!!!*/
+  padding-top: 78px;
+padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 80px;
+
 }
 
+.features-slide-1 {
+  background-image: url("../img/features-slide/slide1.png");
+   background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.features-slide-2 {
+  background-image: url("../img/features-slide/slide2.png");
+   background-repeat: no-repeat;
+  background-position: 100% 1px;
+  display: none;
+}
+
+.features-slide-3 {
+  background-image: url("../img/features-slide/slide3.png");
+   background-repeat: no-repeat;
+  background-position: 100% 1px;
+  display: none;
+}
+
+
 .slide-slogan {
-padding-top: 70px;
-padding-bottom: 22px;
+max-width: 600px;
+margin: 0;
+margin-bottom: 27px;
 font-size: 55px;
 line-height: 55px;
 font-weight: 500;
 }
 
 .slide-caption {
-padding-bottom: 43px;
+margin: 0;
+margin-bottom: 38px;
+max-width: 430px;
 color: #283136;
 }
 
 .button-info {
-  padding-bottom: 80px;
+  width: 240px;
+  font-size: 16px;
 }
 
 /*------------------------Услуги компании------------------*/
@@ -243,22 +309,23 @@ color: #283136;
 }
 
 .button {
-  display: inline-block;
+  display: block;
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
+   text-align: center;
   color: #ffffff;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   background-color: #fb565a;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .order-button {
-  display: inline-block;
+  /* display: inline-block; */
   width: 160px;
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
 }
 
 .order-button-color1 {
