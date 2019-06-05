@@ -437,8 +437,12 @@ color: #283136;
   text-transform: uppercase;
 }
 
-.procent {
+.progress-table {
   display: table;
+  border-collapse: collapse;
+  }
+
+.procent {
   font-size: 45px;
   font-weight: 700;
   line-height: 10px;
@@ -447,9 +451,13 @@ color: #283136;
 }
 
 .value {
-  display: table;
   line-height: 18px;
   color: #283136;
+}
+
+.procent td,
+.value td {
+padding: 20px 0;
 }
 
 /*------------------------Партнеры компании--------------*/
