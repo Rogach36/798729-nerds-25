@@ -24,7 +24,8 @@ body {
 body>*>* {
   background: rgba(225, 235, 223, 0.3);
 } */
-/* body>*>*>* {
+
+body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 }
 
@@ -34,7 +35,7 @@ body>*>*>*>*>* {
 
 body>*>*>*>*>*>* {
   background: rgba(150, 110, 110, 0.3);
-} */
+}
 
 a {
   text-decoration: none;
@@ -110,9 +111,11 @@ img {
   margin-top: 25px;
 }
 
-.menu-clients,
+/* .menu-clients,
 .menu-shop,
-.menu-contacts {
+.menu-contacts */
+.site-navigation li
+{
   margin-left: 50px;
 }
 
