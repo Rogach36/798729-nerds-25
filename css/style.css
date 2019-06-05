@@ -140,7 +140,7 @@ left: 1px;
 
 .order .order-link {
   position: relative;
-  padding-left: 20px;
+  padding-left: 35px;
 }
 
 .order-link::before {
@@ -148,7 +148,7 @@ left: 1px;
   position: absolute;
   width: 15px;
   height: 15px;
-  left: -20px;
+  left: 0px;
   top: 7px;
   background-image: url("../img/icons/icon-cart.svg");
   background-repeat: no-repeat;
