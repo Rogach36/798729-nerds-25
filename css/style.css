@@ -111,9 +111,6 @@ img {
   margin-top: 25px;
 }
 
-/* .menu-clients,
-.menu-shop,
-.menu-contacts */
 .site-navigation li
 {
   margin-left: 50px;
@@ -137,9 +134,7 @@ left: 1px;
   display: flex;
   flex-wrap: wrap;
   width: 125px;
-  /*было 116рх*/
-  /* было margin-left: auto; */
-  margin-left: 105px;
+  margin-left: auto;
   margin-top: 25px;
 }
 
