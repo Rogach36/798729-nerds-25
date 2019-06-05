@@ -786,8 +786,7 @@ margin: 0 auto;
   padding-bottom: 54px;
   background-image: url(../img/map/merged-map.png);
   background-position: 50% 50%;
-  #
-}
+  }
 
 .wrapper-contacts {
   width: 319px;
@@ -831,18 +830,35 @@ margin: 0 auto;
 }
 
 /*--------форма обратной связи начало---------*/
-.popup {
+/* .popup {
   display: none;
-}
-}
+} */
 
-.popup {
+/* .popup {
   width: 960px;
   position: absolute;
   bottom: -850px;
   left: 450px;
   box-shadow: 0 15px 20px 10px #5e5f5f;
   background-color: #ffffff;
+} */
+
+.popup {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -480px;
+  background-color: #ffffff;
+  z-index: 10;
+  width: 960px;
+  padding-top: 60px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 84px;
+  transform: translateY(-50%);
+  box-shadow: 0 15px 20px 10px #5e5f5f;
+
 }
 
 .popup-form {
@@ -857,9 +873,7 @@ margin: 0 auto;
 
 .popup-title {
   margin: 0;
-  margin-top: 68px;
-  margin-bottom: 38px;
-  margin-left: 100px;
+    margin-bottom: 38px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -871,12 +885,11 @@ margin: 0 auto;
   width: 360px;
   margin: 0;
   margin-bottom: 35px;
-  margin: 0;
-  margin-left: 100px;
 }
 
 .letter {
   margin-bottom: 47px;
+  width: 100%;
 }
 
 .name input,
@@ -890,13 +903,11 @@ margin: 0 auto;
 }
 
 .name input {
-  /* padding-right: 239px; */
   width: 260px;
   margin-bottom: 32px;
 }
 
 .mail input {
-  /* padding-right: 195px; */
   width: 260px;
 }
 
@@ -904,23 +915,21 @@ margin: 0 auto;
   width: 100%;
   margin-top: 10px;
   padding-bottom: 83px;
-  /* padding-right: 291px; */
-}
+  }
 
 .modal-button {
   display: block;
   width: 260px;
 }
 
-.wrapper-position {
-  position: relative;
-}
-
 .modal-close {
   position: absolute;
-  left: 870px;
-  bottom: 390px;
-  background-color: red;
+top: 76px;
+right: 90px;
+width: 20px;
+background-color: red;
+height: 20px;
+border: 0;
   /*временно цвет*/
 }
 
@@ -933,6 +942,7 @@ margin: 0 auto;
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   width: 257px;
   align-items: center;
 }
