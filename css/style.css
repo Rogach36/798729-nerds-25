@@ -407,18 +407,18 @@ color: #283136;
   list-style: none;
 }
 
-.ability-list .red-line {
+.ability-list li {
   margin-bottom: 24px;
   position: relative;
   padding-left: 35px;
   /* list-style-image: url(../img/partners/line.png); */
 }
 
-.ability-list .red-line:last-child {
+.ability-list li:last-child {
   margin-bottom: 0;
 }
 
-.red-line::before {
+.ability-list li::before {
   content: "";
   position: absolute;
   width: 26px;
