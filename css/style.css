@@ -148,7 +148,6 @@ left: 1px;
   position: absolute;
   width: 15px;
   height: 15px;
-  /* background-color: #ff0000; */
   left: -20px;
   top: 7px;
   background-image: url("../img/icons/icon-cart.svg");
@@ -221,7 +220,7 @@ position: relative;
 }
 
 .features-slide {
-  width: 1160px;
+
   padding-top: 78px;
 padding-right: 0;
     padding-left: 0;
