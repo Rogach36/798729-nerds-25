@@ -421,13 +421,11 @@ color: #283136;
 .red-line::before {
   content: "";
   position: absolute;
-  background-image: url("../img/partners/line.png");
   width: 26px;
-  height: 26px;
+  height: 2px;
   top: 10px;
   left: 0px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background: #fb565a;
 }
 
 .picture-nerds {
