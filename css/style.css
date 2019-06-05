@@ -729,10 +729,7 @@ img {
 }
 
 .pagination-item {
-  width: 49px;
-  height: 49px;
   margin-right: 20px;
-  border-radius: 5px;
 }
 
 .pagination-item:last-child {
@@ -742,9 +739,16 @@ img {
 
 .pagination-item a {
   display: block;
+  min-width: 50px;
+  padding: 13px 5px;
   text-align: center;
-  padding-top: 12px;
+  line-height: 18px;
+  font-weight: 500;
   color: inherit;
+  border: 3px solid transparent;
+  bacground: #eeeeee;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .pagination-item:last-child a {
@@ -820,9 +824,6 @@ img {
 
 /*--------форма обратной связи начало---------*/
 /* .popup {
-  display: none;
-} */
-/* .popup {
   width: 960px;
   position: absolute;
   bottom: -850px;
@@ -830,6 +831,10 @@ img {
   box-shadow: 0 15px 20px 10px #5e5f5f;
   background-color: #ffffff;
 } */
+.popup {
+  display: none;
+}
+
 .popup {
   display: block;
   position: fixed;
@@ -917,6 +922,10 @@ img {
   height: 20px;
   border: 0;
   /*временно цвет*/
+}
+
+.popup {
+  display: none;
 }
 
 /*-----------форма обратной связи конец-------*/
