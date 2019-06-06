@@ -766,12 +766,19 @@ img {
   color: inherit;
   border: 3px solid transparent;
   bacground: #eeeeee;
-  border-radius: 5px;
   text-transform: uppercase;
 }
 
+.pagination-item a:not([href]) {
+  background: none;
+  border-color:  solid 3px #dbdbdb;
+  border-radius: 5px;
+
+}
+
 .pagination-item:last-child a {
-  text-align: center;
+  /* text-align: center; */
+  min-width: 260px;
 }
 
 .pagination-item-current {
@@ -788,7 +795,6 @@ img {
   color: #a9a9a9;
 }
 
-.pagination-item a:active {}
 
 /*здесь завершается разметка страницы каталога*/
 /*----------------footer сайта (Контакты)--------------*/
