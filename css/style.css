@@ -611,6 +611,16 @@ background-position: 0 0;
 opacity: 0.3;
 }
 
+.filter-input-checkbox:hover+label::after {
+  width: 27px;
+  height: 27px;
+  left: -34px;
+  top: -4px;
+  background-image: url(../img/icons/icon-filter/icon-checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  }
+
 .filter-input:hover+label,
 .filter-input:focus+label {
   /* color: #283136; */
@@ -799,13 +809,12 @@ opacity: 0.3;
 .pagination-item a:not([href]) {
   background: none;
   border-color:  solid 3px #dbdbdb;
-  border-radius: 5px;
-
-}
+  }
 
 .pagination-item:last-child a {
     /* text-align: center; */
-  min-width: 260px;
+      /* min-width: 260px; */
+      /* если убрать min-width, то все ок */
 }
 
 .pagination-item-current {
