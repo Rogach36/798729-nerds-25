@@ -117,6 +117,7 @@ img {
 .menu-navigation-current {
   position: relative;
 }
+/*попробовал сделать подчеркивание в меню для нахождения на текущей странице*/
 
 .menu-navigation-current::after {
   contain: "";
@@ -472,29 +473,31 @@ img {
   margin-left: auto;
   margin-right: auto;
   opacity: 0.2;
-}
+  }
 
 .partners-list img {
   display: block;
   margin: 0 auto;
+
+
   /* border: solid 1px black; */
 }
 
-/* .partners-list li {
+ .partners-list li {
   margin-bottom: 24px;
   position: relative;
   padding-left: 35px;
   }
 
-.partners-list li::after {
+/* .partners-list li::after {
   content: "";
   position: absolute;
   width: 2px;
   height: 38px;
   top: 25px;
   left: 10px;
-  background: #fb565a; */
-}
+  background: #fb565a;
+} */
 
 .partners-list li:hover {
   opacity: 1;
