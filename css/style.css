@@ -559,13 +559,93 @@ img {
   padding-left: 36px;
 }
 
-.filter-option label {
-  position: relative;
-  display: block;
-  cursor: pointer;
+.label-radio,
+.checkbox-label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    }
+
+.label-radio::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #4d4d4d;
+  left: -34px;
+  top: -4px;
+  border-radius: 50%;
+  opacity: 0.4;
 }
 
-.filter-input-radio+label::before {
+.label-radio:hover::before {
+  opacity: 1;
+}
+
+.filter-input-radio:checked+.label-radio-checked::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px,  #4d4d4d 13px);
+  left: -35px;
+  top: -4px;
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked+.label-radio-checked:hover::before {
+  opacity: 1;
+}
+
+.filter-input-radio+.label-radio:focus::before,
+.filter-input-radio:checked+.label-radio-checked:focus::before {
+  opacity: 1;
+}
+
+
+
+.checkbox-label::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+
+  left: -34px;
+  top: -4px;
+  background-image: url(../img/icons/icon-filter/icon-checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.checkbox-label:hover::after {
+  opacity: 1;
+}
+
+.filter-input-checkbox:checked+.checkbox-label-checked::after
+ {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  left: -34px;
+  top: -4px;
+  background-image: url(../img/icons/icon-filter/icon-checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:checked+.checkbox-label-checked:hover::after {
+  opacity: 1;
+}
+
+.filter-input+.checkbox-label:focus::after,
+.filter-input-checkbox:checked+.checkbox-label-checked:focus::after {
+  opacity: 1;
+} /*не работает фокус*/
+
+/* .filter-input-radio+label::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -589,7 +669,7 @@ img {
   opacity: 0.3;
 }
 
-.filter-input-checkbox+label::before {
+/* .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
   width: 23px;
@@ -598,6 +678,20 @@ img {
   left: -34px;
   top: -4px;
   opacity: 0.3;
+} *//*чекбокс на css*//*
+
+.filter-input-checkbox+label::before {
+content: "";
+position: absolute;
+width: 27px;
+height: 27px;
+
+left: -34px;
+top: -4px;
+background-image: url(../img/icons/icon-filter/icon-checkbox-off.svg);
+background-repeat: no-repeat;
+background-position: 0 0;
+opacity: 0.4;
 }
 
 .filter-input-checkbox:checked+label::after {
@@ -611,7 +705,7 @@ top: -4px;
 background-image: url(../img/icons/icon-filter/icon-checkbox-on.svg);
 background-repeat: no-repeat;
 background-position: 0 0;
-opacity: 0.3;
+opacity: 0.4;
 }
 
 .filter-input-checkbox:hover+label::after {
@@ -627,8 +721,8 @@ opacity: 0.3;
 .filter-input:hover+label,
 .filter-input:focus+label {
   /* color: #283136; */
-  opacity: 0.3;
-}
+  opacity: 1;
+} */
 
 
 /* .filter-input-checkbox:checked+label::after {
