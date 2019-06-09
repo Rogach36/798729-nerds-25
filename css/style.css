@@ -24,7 +24,7 @@ body {
 body>*>* {
   background: rgba(225, 235, 223, 0.3);
 } */
-body>*>*>* {
+ body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 }
 
@@ -35,7 +35,6 @@ body>*>*>*>*>* {
 body>*>*>*>*>*>* {
   background: rgba(150, 110, 110, 0.3);
 }
-
 a {
   text-decoration: none;
 }
@@ -117,8 +116,8 @@ img {
 .menu-navigation-current {
   position: relative;
 }
-/*попробовал сделать подчеркивание в меню для нахождения на текущей странице*/
 
+/*попробовал сделать подчеркивание в меню для нахождения на текущей странице*/
 .menu-navigation-current::after {
   contain: "";
   position: absolute;
@@ -406,7 +405,7 @@ img {
   margin-bottom: 24px;
   position: relative;
   padding-left: 35px;
-  }
+}
 
 .ability-list li:last-child {
   margin-bottom: 0;
@@ -456,8 +455,10 @@ img {
 
 /*------------------------Партнеры компании--------------*/
 .partners {
-  padding-bottom: 45px;
+  padding-top: 60px;
   margin-bottom: 80px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .partners-list {
@@ -465,45 +466,46 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  align-items: center;
 }
 
 .partners-list li {
+  position: relative;
   width: 260px;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.2;
-  }
-
-.partners-list img {
-  display: block;
-  margin: 0 auto;
-
-
-  /* border: solid 1px black; */
+  margin-bottom: 24px;
+  padding-left: 35px;
+  text-align: center;
 }
 
- .partners-list li {
-  margin-bottom: 24px;
-  position: relative;
-  padding-left: 35px;
-  }
-
-/* .partners-list li::after {
+.partners-list li::after {
   content: "";
   position: absolute;
   width: 2px;
-  height: 38px;
-  top: 25px;
-  left: 10px;
-  background: #fb565a;
-} */
+  height: 52px;
+  bottom: 35px;
+  left: 5px;
+  background: #eeeeee;
+}
 
-.partners-list li:hover {
+.partners-list li:first-child::after {
+  content: "";
+  display: none;
+}
+
+.partners-list a {
+  display: block;
+  text-align: center;
+  opacity: 0.2;
+}
+
+.partners-list a:hover {
+  display: block;
   opacity: 1;
 }
 
-.partners-list li:active {
+.partners-list a:active {
+  display: block;
   opacity: 0.1;
 }
 
@@ -561,10 +563,10 @@ img {
 
 .label-radio,
 .checkbox-label {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    }
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
 
 .label-radio::before {
   content: "";
@@ -587,7 +589,7 @@ img {
   position: absolute;
   width: 25px;
   height: 25px;
-  background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px,  #4d4d4d 13px);
+  background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, #4d4d4d 13px);
   left: -35px;
   top: -4px;
   opacity: 0.4;
@@ -602,14 +604,11 @@ img {
   opacity: 1;
 }
 
-
-
 .checkbox-label::after {
   content: "";
   position: absolute;
   width: 27px;
   height: 27px;
-
   left: -34px;
   top: -4px;
   background-image: url(../img/icons/icon-filter/icon-checkbox-off.svg);
@@ -622,8 +621,7 @@ img {
   opacity: 1;
 }
 
-.filter-input-checkbox:checked+.checkbox-label-checked::after
- {
+.filter-input-checkbox:checked+.checkbox-label-checked::after {
   content: "";
   position: absolute;
   width: 27px;
@@ -643,8 +641,9 @@ img {
 .filter-input+.checkbox-label:focus::after,
 .filter-input-checkbox:checked+.checkbox-label-checked:focus::after {
   opacity: 1;
-} /*не работает фокус*/
+}
 
+/*не работает фокус*/
 /* .filter-input-radio+label::before {
   content: "";
   position: absolute;
@@ -678,7 +677,9 @@ img {
   left: -34px;
   top: -4px;
   opacity: 0.3;
-} *//*чекбокс на css*//*
+} */
+/*чекбокс на css*/
+/*
 
 .filter-input-checkbox+label::before {
 content: "";
@@ -721,9 +722,10 @@ opacity: 0.4;
 .filter-input:hover+label,
 .filter-input:focus+label {
   /* color: #283136; */
-  opacity: 1;
-} */
+opacity: 1;
+}
 
+*/
 
 /* .filter-input-checkbox:checked+label::after {
   content: "";
@@ -735,12 +737,9 @@ opacity: 0.4;
   top: 3px;
   background-image: url(../img/icons/icon-filter/icon-checkbox-on.svg);
   /* не работает */
-  /*background-repeat: no-repeat;
+/*background-repeat: no-repeat;
   background-position: 0 0;
 } */
-
-
-
 .filter-input:hover+label,
 .filter-input:focus+label {
   /* color: #283136; */
@@ -751,7 +750,6 @@ opacity: 0.4;
   color: #283136;
   opacity: 0.3;
 } */
-
 .filter-button {
   color: #000000;
   background-color: #eeeeee;
@@ -905,13 +903,13 @@ opacity: 0.4;
 
 .pagination-item a:not([href]) {
   background: none;
-  border-color:  solid 3px #dbdbdb;
-  }
+  border-color: solid 3px #dbdbdb;
+}
 
 .pagination-item:last-child a {
-    /* text-align: center; */
-      /* min-width: 260px; */
-      /* если убрать min-width, то все ок */
+  /* text-align: center; */
+  /* min-width: 260px; */
+  /* если убрать min-width, то все ок */
 }
 
 .pagination-item-current {
@@ -927,7 +925,6 @@ opacity: 0.4;
   box-shadow: inset 0 3px 0 0 #bfbfbf;
   color: #a9a9a9;
 }
-
 
 /*здесь завершается разметка страницы каталога*/
 /*----------------footer сайта (Контакты)--------------*/
