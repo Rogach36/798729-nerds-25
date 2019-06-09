@@ -113,20 +113,23 @@ img {
   margin-left: 50px;
 }
 
-.menu-navigation-current {
+/*попробовал сделать подчеркивание в меню для нахождения на текущей странице*/
+
+.menu-current a {
   position: relative;
+  display: block;
+
 }
 
-/*попробовал сделать подчеркивание в меню для нахождения на текущей странице*/
-.menu-navigation-current::after {
+.menu-item-current::after {
   contain: "";
   position: absolute;
+  display: block;
   background-color: #fb565a;
   height: 3px;
-  bottom: 12px;
-  right: 1px;
-  left: 1px;
-}
+  bottom: 5px;
+  }
+
 
 /*попробовал сделать подчеркивание в меню для нахождения на текущей странице*/
 .order {
@@ -642,7 +645,6 @@ img {
 .filter-input-checkbox:checked+.checkbox-label-checked:focus::after {
   opacity: 1;
 }
-
 /*не работает фокус*/
 /* .filter-input-radio+label::before {
   content: "";
@@ -978,6 +980,7 @@ opacity: 1;
 }
 
 /*--------форма обратной связи начало---------*/
+/* вернуться к форме и достилизовать инпуты */
 .popup {
   display: block;
   position: fixed;
@@ -1089,9 +1092,9 @@ opacity: 1;
   transform: rotate(-45deg);
 }
 
- /* .popup {
+  .popup {
   display: none;
-} */
+}
 
 /*-----------форма обратной связи конец-------*/
 .social-connection {
