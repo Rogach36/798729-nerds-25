@@ -11,7 +11,7 @@ body {
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   color: #000000;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
   /*вернуть фон после макросетки*/
   font-size: 16px;
   line-height: 24px;
@@ -24,7 +24,7 @@ body {
 body>*>* {
   background: rgba(225, 235, 223, 0.3);
 } */
- body>*>*>* {
+ /* body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 }
 
@@ -37,7 +37,7 @@ body>*>*>*>*>*>* {
 }
 a {
   text-decoration: none;
-}
+} */
 
 img {
   max-width: 100%;
