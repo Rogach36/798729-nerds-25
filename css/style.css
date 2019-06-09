@@ -113,7 +113,7 @@ img {
   margin-left: 50px;
 }
 
-/*попробовал сделать подчеркивание в меню для нахождения на текущей странице*/
+/*стили для подчеркивания активного пунка меню. Не рабоатет*/
 
 .menu-current a {
   position: relative;
@@ -131,7 +131,7 @@ img {
   }
 
 
-/*попробовал сделать подчеркивание в меню для нахождения на текущей странице*/
+/*стили для подчеркивания активного пунка меню.*/
 .order {
   display: flex;
   flex-wrap: wrap;
@@ -1064,7 +1064,7 @@ opacity: 1;
   top: 76px;
   right: 90px;
   width: 20px;
-  background-color: red;
+
   height: 20px;
   border: 0;
   cursor: pointer;
@@ -1080,9 +1080,18 @@ opacity: 1;
   height: 3px;
   top: 8px;
   right: -2px;
-  background-color: black;
+  background-color: #fb565a;
 }
-/*#fb565a красный крестик*/
+
+.modal-close:hover::before,
+.modal-close:hover::after {
+  opacity: 0.3;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+  opacity: 0.1;
+}
 
 .modal-close::before{
   transform: rotate(45deg);
@@ -1092,9 +1101,9 @@ opacity: 1;
   transform: rotate(-45deg);
 }
 
-  .popup {
+  /* .popup {
   display: none;
-}
+} */
 
 /*-----------форма обратной связи конец-------*/
 .social-connection {
