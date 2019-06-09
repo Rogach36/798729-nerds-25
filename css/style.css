@@ -978,18 +978,6 @@ opacity: 1;
 }
 
 /*--------форма обратной связи начало---------*/
-/* .popup {
-  width: 960px;
-  position: absolute;
-  bottom: -850px;
-  left: 450px;
-  box-shadow: 0 15px 20px 10px #5e5f5f;
-  background-color: #ffffff;
-} */
-.popup {
-  display: none;
-}
-
 .popup {
   display: block;
   position: fixed;
@@ -1076,12 +1064,34 @@ opacity: 1;
   background-color: red;
   height: 20px;
   border: 0;
+  cursor: pointer;
+
   /*временно цвет*/
 }
 
-.popup {
-  display: none;
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 3px;
+  top: 8px;
+  right: -2px;
+  background-color: black;
 }
+/*#fb565a красный крестик*/
+
+.modal-close::before{
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+ /* .popup {
+  display: none;
+} */
 
 /*-----------форма обратной связи конец-------*/
 .social-connection {
