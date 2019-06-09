@@ -1054,6 +1054,31 @@ opacity: 1;
   padding-bottom: 83px;
 }
 
+.popup-form input,
+.popup-form textarea  {
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+
+}
+
+.popup-form input:hover,
+.popup-form textarea:hover
+ {
+  border: 2px solid #b4b9bb;
+  }
+
+  .popup-form input:focus,
+  .popup-form textarea:focus
+   {
+    border: 2px solid #000000;
+    }
+
+    .popup-form input:invalid,
+    .popup-form textarea:invalid {
+      border: 2px solid #e74246;
+      color: #e74246;
+      }
+
 .modal-button {
   display: block;
   width: 260px;
@@ -1069,8 +1094,7 @@ opacity: 1;
   border: 0;
   cursor: pointer;
 
-  /*временно цвет*/
-}
+  }
 
 .modal-close::before,
 .modal-close::after {
