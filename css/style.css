@@ -199,7 +199,7 @@ img {
 
 .sliders-controls .active::before {}
 
-.sliders-controls i {
+.sliders-controls a {
   position: relative;
   display: inline-block;
   width: 18px;
@@ -209,9 +209,10 @@ img {
   cursor: pointer;
 }
 
-.sliders-controls i::after {
+.sliders-controls a::after {
   content: "";
   position: absolute;
+  display: inline-block;
   top: 9px;
   left: 9px;
   z-index: 1;
