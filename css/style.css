@@ -434,6 +434,7 @@ img {
 .progress-slogan {
   font-weight: 700;
   text-transform: uppercase;
+  padding-left: 17px;
 }
 
 .progress-table {
@@ -457,6 +458,16 @@ img {
 .procent td,
 .value td {
   padding: 20px 0;
+}
+
+.procent td {
+  padding-right: 25px;
+}
+
+.pocent-smb {
+  vertical-align: super;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 /*------------------------Партнеры компании--------------*/
