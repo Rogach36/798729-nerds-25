@@ -1154,8 +1154,9 @@ opacity: 1;
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  width: 257px;
+  width: 260px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .for-friends {
