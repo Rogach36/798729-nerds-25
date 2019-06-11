@@ -117,14 +117,17 @@ img {
 
 /*стили для подчеркивания активного пунка меню. Не рабоатет*/
 
-.menu-current a {
+/* .menu-current a  */
+
+.menu-item-current {
   position: relative;
   display: block;
+  /* padding-bottom: 5px; */
 
 }
 
 .menu-item-current::after {
-  contain: "";
+  content: "";
   position: absolute;
   display: block;
   background-color: #fb565a;
