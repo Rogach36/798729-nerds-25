@@ -24,7 +24,7 @@ body {
 body>*>* {
   background: rgba(225, 235, 223, 0.3);
 } */
-  /* body>*>*>* {
+   body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 }
 
@@ -34,7 +34,7 @@ body>*>*>*>*>* {
 
 body>*>*>*>*>*>* {
   background: rgba(150, 110, 110, 0.3);
-} */
+}
 
 a {
   text-decoration: none;
@@ -115,24 +115,20 @@ img {
   margin-left: 0;
 }
 
-/*стили для подчеркивания активного пунка меню. Не рабоатет*/
-
-/* .menu-current a  */
+/*стили для подчеркивания активного пунка меню, не работает
+без явного прописанной ширины псевдоэлементу*/
 
 .menu-item-current {
   position: relative;
-  display: block;
-  /* padding-bottom: 5px; */
-
-}
+  }
 
 .menu-item-current::after {
   content: "";
   position: absolute;
   display: block;
   background-color: #fb565a;
+  width: 75px;
   height: 3px;
-  bottom: 5px;
   }
 
 
