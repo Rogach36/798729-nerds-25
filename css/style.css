@@ -24,7 +24,7 @@ body {
 body>*>* {
   background: rgba(225, 235, 223, 0.3);
 } */
-   body>*>*>* {
+body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 }
 
@@ -116,11 +116,10 @@ img {
 }
 
 /*стили для подчеркивания активного пунка меню, не работает
-без явного прописанной ширины псевдоэлементу*/
-
+без явно прописанной ширины псевдоэлементу*/
 .menu-item-current {
   position: relative;
-  }
+}
 
 .menu-item-current::after {
   content: "";
@@ -129,8 +128,7 @@ img {
   background-color: #fb565a;
   width: 75px;
   height: 3px;
-  }
-
+}
 
 /*стили для подчеркивания активного пунка меню.*/
 .order {
@@ -329,8 +327,8 @@ img {
 }
 
 .order-button {
-    width: 160px;
-  }
+  width: 160px;
+}
 
 .order-button-color1 {
   background-color: #00ca74;
@@ -339,7 +337,6 @@ img {
 .order-button-color2 {
   background-color: #efc84a;
 }
-
 
 .order-button-color1:hover,
 .order-button-color1:focus {
@@ -656,6 +653,7 @@ img {
 .filter-input-checkbox:checked+.checkbox-label-checked:focus::after {
   opacity: 1;
 }
+
 /*не работает фокус*/
 /* .filter-input-radio+label::before {
   content: "";
@@ -768,7 +766,7 @@ opacity: 1;
   background-color: #eeeeee;
   width: 260px;
   border: 3px solid transparent;
-  }
+}
 
 .filter-button:hover,
 .filter-button:focus {
@@ -1066,29 +1064,26 @@ opacity: 1;
 }
 
 .popup-form input,
-.popup-form textarea  {
+.popup-form textarea {
   border: 2px solid #d7dcde;
   border-radius: 2px;
-
 }
 
 .popup-form input:hover,
-.popup-form textarea:hover
- {
+.popup-form textarea:hover {
   border: 2px solid #b4b9bb;
-  }
+}
 
-  .popup-form input:focus,
-  .popup-form textarea:focus
-   {
-    border: 2px solid #000000;
-    }
+.popup-form input:focus,
+.popup-form textarea:focus {
+  border: 2px solid #000000;
+}
 
-    .popup-form input:invalid,
-    .popup-form textarea:invalid {
-      border: 2px solid #e74246;
-      color: #e74246;
-      }
+.popup-form input:invalid,
+.popup-form textarea:invalid {
+  border: 2px solid #e74246;
+  color: #e74246;
+}
 
 .modal-button {
   display: block;
@@ -1100,12 +1095,10 @@ opacity: 1;
   top: 76px;
   right: 90px;
   width: 20px;
-
   height: 20px;
   border: 0;
   cursor: pointer;
-
-  }
+}
 
 .modal-close::before,
 .modal-close::after {
@@ -1128,7 +1121,7 @@ opacity: 1;
   opacity: 0.1;
 }
 
-.modal-close::before{
+.modal-close::before {
   transform: rotate(45deg);
 }
 
@@ -1136,7 +1129,7 @@ opacity: 1;
   transform: rotate(-45deg);
 }
 
-   .popup {
+.popup {
   display: none;
 }
 
