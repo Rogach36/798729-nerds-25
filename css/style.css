@@ -710,6 +710,14 @@ img {
   color: #000000;
 }
 
+.catalog-item-topic a:hover {
+  color: #fb565a;
+}
+
+.catalog-item-topic a:active {
+  color: #b2b2b2;
+}
+
 .description-catalog-item .catalog-item-topic {
   font-size: 18px;
   font-weight: 700;
