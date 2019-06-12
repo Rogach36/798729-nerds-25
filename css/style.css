@@ -985,12 +985,6 @@ img {
   border: 2px solid #000000;
 }
 
-/* .popup-form input:invalid,
-.popup-form textarea:invalid {
-  border: 2px solid #e74246;
-  color: #e74246;
-} */
-
 .modal-button {
   display: block;
   width: 260px;
