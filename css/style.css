@@ -115,8 +115,10 @@ img {
   margin-left: 0;
 }
 
-/*стили для подчеркивания активного пунка меню, не работает
-без явно прописанной ширины псевдоэлементу*/
+/*стили для подчеркивания активного пунка меню. Подчеркивание не появлялось,
+решил проверить работает ли псевдоэлемент, задал явно ширину и подчеркивание
+появилось. А как сделать чтобы длина подчеркивания зависела от длины слова в ссылке
+не пойму. Пропускаю что-то очевидное в коде....*/
 .menu-item-current {
   position: relative;
 }
@@ -193,8 +195,6 @@ img {
   font-size: 0;
   transform: translateX(-50%);
 }
-
-.sliders-controls .active::before {}
 
 .sliders-controls a {
   position: relative;
@@ -579,15 +579,13 @@ img {
 
 
 .label-radio,
-.checkbox-label {
+.label-checkbox {
   position: relative;
   display: block;
   cursor: pointer;
 }
 
-
-
-.label-radio::before {
+.label-radio:before {
   content: "";
   position: absolute;
   width: 25px;
@@ -597,33 +595,36 @@ img {
   top: -4px;
   border-radius: 50%;
   opacity: 0.4;
-  background: radial-gradient(#ffffff 9px, #4d4d4d 9px, #4d4d4d 13px);
+  background: radial-gradient(#00ffff00 9px, #4d4d4d 9px, #4d4d4d 13px);
 }
 
-.label-radio:hover::before {
-  opacity: 1;
-}
-
-.filter-input-radio:checked+.label-radio-checked::before {
-
+.filter-input-radio:checked+.label-radio::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #4d4d4d;
+  left: -34px;
+  top: -4px;
+  border-radius: 50%;
+  opacity: 0.4;
   background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, #4d4d4d 13px);
-
 }
 
-.filter-input-radio+.label-radio::after {
-background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, #4d4d4d 13px);
-}
-
-.filter-input-radio:checked+.label-radio-checked:hover::before {
+.label-radio:hover::before,
+.filter-input-radio:hover+.label-radio::after {
   opacity: 1;
 }
 
-.filter-input-radio+.label-radio:focus::before,
-.filter-input-radio:checked+.label-radio-checked:focus::before {
+.filter-input-radio:focus+.label-radio::before {
   opacity: 1;
 }
 
-.checkbox-label::after {
+.filter-input-radio:disabled+.label-radio {
+  opacity: 0.3;
+}
+
+.label-checkbox::before {
   content: "";
   position: absolute;
   width: 27px;
@@ -636,29 +637,25 @@ background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, 
   opacity: 0.4;
 }
 
-.checkbox-label:hover::after {
-  opacity: 1;
-}
-
-.filter-input-checkbox:checked+.checkbox-label-checked::after {
-  /* content: "";
+.filter-input-checkbox:checked+.label-checkbox::after {
+  content: "";
   position: absolute;
   width: 27px;
   height: 27px;
   left: -34px;
-  top: -4px; */
+  top: -4px;
   background-image: url(../img/icons/icon-filter/icon-checkbox-on.svg);
-  /* background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.4; */
+  opacity: 0.4;
 }
 
-.filter-input-checkbox:checked+.checkbox-label-checked:hover::after {
+.label-checkbox:hover::before,
+.filter-input-checkbox:hover+.label-checkbox::after {
   opacity: 1;
 }
 
-.filter-input+.checkbox-label:focus::after,
-.filter-input-checkbox:checked+.checkbox-label-checked:focus::after {
+.filter-input-checkbox:focus+.label-checkbox::before {
   opacity: 1;
 }
 
@@ -890,7 +887,7 @@ background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, 
 }
 
 /*--------форма обратной связи начало---------*/
-/* вернуться к форме и достилизовать инпуты */
+
 .popup {
   display: block;
   position: fixed;
@@ -980,11 +977,11 @@ background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, 
   border: 2px solid #000000;
 }
 
-.popup-form input:invalid,
+/* .popup-form input:invalid,
 .popup-form textarea:invalid {
   border: 2px solid #e74246;
   color: #e74246;
-}
+} */
 
 .modal-button {
   display: block;
@@ -999,6 +996,7 @@ background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, 
   height: 20px;
   border: 0;
   cursor: pointer;
+  background-color: inherit;
 }
 
 .modal-close::before,
