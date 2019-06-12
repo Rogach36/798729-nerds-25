@@ -24,7 +24,7 @@ body {
 body>*>* {
   background: rgba(225, 235, 223, 0.3);
 } */
-body>*>*>* {
+/* body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 }
 
@@ -34,7 +34,7 @@ body>*>*>*>*>* {
 
 body>*>*>*>*>*>* {
   background: rgba(150, 110, 110, 0.3);
-}
+} */
 
 a {
   text-decoration: none;
@@ -597,6 +597,7 @@ img {
   top: -4px;
   border-radius: 50%;
   opacity: 0.4;
+  background: radial-gradient(#ffffff 9px, #4d4d4d 9px, #4d4d4d 13px);
 }
 
 .label-radio:hover::before {
@@ -604,14 +605,13 @@ img {
 }
 
 .filter-input-radio:checked+.label-radio-checked::before {
-  /* content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px; */
+
   background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, #4d4d4d 13px);
-  /* left: -35px;
-  top: -4px;
-  opacity: 0.4; */
+
+}
+
+.filter-input-radio+.label-radio::after {
+background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, #4d4d4d 13px);
 }
 
 .filter-input-radio:checked+.label-radio-checked:hover::before {
@@ -804,11 +804,12 @@ img {
   min-width: 50px;
   padding: 13px 5px;
   text-align: center;
+  font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: inherit;
   border: 3px solid transparent;
-  bacground: #eeeeee;
+  background-color: #eeeeee;
   text-transform: uppercase;
 }
 
@@ -818,22 +819,21 @@ img {
 }
 
 .pagination-item:last-child a {
-  /* text-align: center; */
-  /* min-width: 260px; */
-  /* если убрать min-width, то все ок */
-}
+  min-width: 260px;
+  }
 
-.pagination-item-current {
+.pagination-item-current a {
   border: solid 3px #dbdbdb;
 }
 
-.pagination-item:hover {
+.pagination-item a:hover {
   background-color: #dfdfdf;
 }
 
-.pagination-item:active {
+.pagination-item a[href]:active {
   background-color: #d5d5d5;
-  box-shadow: inset 0 3px 0 0 #bfbfbf;
+  /* box-shadow: inset 0 3px 0 0 #bfbfbf; */
+  border-top: solid 3px #bfbfbf;
   color: #a9a9a9;
 }
 
