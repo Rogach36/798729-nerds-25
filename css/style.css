@@ -119,6 +119,9 @@ img {
 решил проверить работает ли псевдоэлемент, задал явно ширину и подчеркивание
 появилось. А как сделать чтобы длина подчеркивания зависела от длины слова в ссылке
 не пойму. Пропускаю что-то очевидное в коде....*/
+
+
+
 .menu-item-current {
   position: relative;
 }
@@ -569,7 +572,7 @@ img {
 
 .filter-option {
   margin-bottom: 20px;
-  padding-left: 36px;
+
 }
 
 .filter-option-rubber,
@@ -583,7 +586,8 @@ img {
   position: relative;
   display: block;
   cursor: pointer;
-}
+  padding-left: 36px;
+  }
 
 .label-radio:before {
   content: "";
@@ -591,23 +595,15 @@ img {
   width: 25px;
   height: 25px;
   border: 4px solid #4d4d4d;
-  left: -34px;
+  left: 0;
   top: -4px;
   border-radius: 50%;
   opacity: 0.4;
   background: radial-gradient(#00ffff00 9px, #4d4d4d 9px, #4d4d4d 13px);
 }
 
-.filter-input-radio:checked+.label-radio::after {
+.filter-input-radio:checked+.label-radio::before {
   content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border: 4px solid #4d4d4d;
-  left: -34px;
-  top: -4px;
-  border-radius: 50%;
-  opacity: 0.4;
   background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, #4d4d4d 13px);
 }
 
@@ -629,7 +625,7 @@ img {
   position: absolute;
   width: 27px;
   height: 27px;
-  left: -34px;
+  left: 0;
   top: -4px;
   background-image: url(../img/icons/icon-filter/icon-checkbox-off.svg);
   background-repeat: no-repeat;
@@ -637,17 +633,9 @@ img {
   opacity: 0.4;
 }
 
-.filter-input-checkbox:checked+.label-checkbox::after {
+.filter-input-checkbox:checked+.label-checkbox::before {
   content: "";
-  position: absolute;
-  width: 27px;
-  height: 27px;
-  left: -34px;
-  top: -4px;
   background-image: url(../img/icons/icon-filter/icon-checkbox-on.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.4;
 }
 
 .label-checkbox:hover::before,
