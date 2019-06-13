@@ -816,6 +816,7 @@ img {
   border: 3px solid transparent;
   background-color: #eeeeee;
   text-transform: uppercase;
+border-radius: 3px;
 }
 
 .pagination-item a:not([href]) {
