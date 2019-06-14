@@ -312,6 +312,7 @@ img {
   padding-bottom: 16px;
   background-color: #fb565a;
   border-radius: 3px;
+  border: none;
 }
 
 .button:hover,
@@ -647,7 +648,6 @@ img {
   color: #000000;
   background-color: #eeeeee;
   width: 260px;
-  border: none;
   }
 
 .filter-button:hover,
