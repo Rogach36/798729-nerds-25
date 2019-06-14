@@ -84,12 +84,12 @@ img {
   font-weight: 500;
 }
 
-.main-header-logo:hover,
-.main-header-logo:focus {
+.main-header-logo[href]:hover,
+.main-header-logo[href]:focus {
   opacity: 0.8;
 }
 
-.main-header-logo:active {
+.main-header-logo[href]:active {
   opacity: 0.3;
 }
 
@@ -115,12 +115,7 @@ img {
   margin-left: 0;
 }
 
-/*стили для подчеркивания активного пунка меню. Подчеркивание не появлялось,
-решил проверить работает ли псевдоэлемент, задал явно ширину и подчеркивание
-появилось. А как сделать чтобы длина подчеркивания зависела от длины слова в ссылке
-не пойму. Пропускаю что-то очевидное в коде....*/
-
-
+/*стили для подчеркивания активного пунка меню.*/
 
 .menu-item-current {
   position: relative;
@@ -134,8 +129,6 @@ img {
   left: 0;
   width: 100%;
   height: 3px;
-
-
 }
 
 /*стили для подчеркивания активного пунка меню.*/
