@@ -971,6 +971,28 @@ border-radius: 3px;
   border: 2px solid #000000;
 }
 
+input[type="text"]:required:invalid {
+  color: #e74246;
+  border: 2px solid #e74246;
+}
+
+
+
+
+
+/* .name input[type="text"]:required,
+.name input[type="text"]:invalid {
+  border: 2px solid red;
+  color: red;
+}
+
+.mail input[type="e-mail"]:required:invalid {
+  border: 2px solid red;
+  color: red;
+} */
+
+
+
 .modal-button {
   display: block;
   width: 260px;
@@ -1016,9 +1038,9 @@ border-radius: 3px;
   transform: rotate(-45deg);
 }
 
-.popup {
+/* .popup {
   display: none;
-}
+} */
 
 /*-----------форма обратной связи конец-------*/
 .social-connection {
