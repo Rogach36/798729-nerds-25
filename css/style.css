@@ -131,8 +131,11 @@ img {
   position: absolute;
   display: block;
   background-color: #fb565a;
-  width: 75px;
+  left: 0;
+  width: 100%;
   height: 3px;
+
+
 }
 
 /*стили для подчеркивания активного пунка меню.*/
