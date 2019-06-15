@@ -604,18 +604,24 @@ img {
   background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, #4d4d4d 13px);
 }
 
-.label-radio:hover::before,
-.filter-input-radio:hover+.label-radio::after {
+.filter-input-radio:not(:disabled)+.label-radio:hover::before,
+.filter-input-radio:checked:not(:disabled)+.label-radio:hover::before {
   opacity: 1;
-}
+} /*здесь hover работает независимо от того у инпута он или у радио*/
 
-.filter-input-radio:focus+.label-radio::before {
+.filter-input-radio:focus+.label-radio::before,
+.filter-input-radio:checked:focus+.label-radio::before  {
   opacity: 1;
 }
 
 .filter-input-radio:disabled+.label-radio {
   opacity: 0.3;
 }
+
+.filter-input-radio:checked:disabled+.label-radio {
+  opacity: 0.3;
+}/* а здесь disabled работает только когад он возле инпута*/
+
 
 .label-checkbox::before {
   content: "";
@@ -635,14 +641,22 @@ img {
   background-image: url(../img/icons/icon-filter/icon-checkbox-on.svg);
 }
 
+/* .label-checkbox:hover::before,
+.filter-input-checkbox:hover+.label-checkbox::before {
+  opacity: 1;
+} */ /*cтарое правило пока  убрал*/
+
 .label-checkbox:hover::before,
-.filter-input-checkbox:hover+.label-checkbox::after {
+.label-checkbox:checked:hover::before {
   opacity: 1;
 }
 
-.filter-input-checkbox:focus+.label-checkbox::before {
+.filter-input-checkbox:focus+.label-checkbox::before,
+.filter-input-checkbox:checked:focus+.label-checkbox::before {
   opacity: 1;
 }
+
+
 
 .filter-button {
   color: #000000;
@@ -971,26 +985,15 @@ border-radius: 3px;
   border: 2px solid #000000;
 }
 
-input[type="text"]:required:invalid {
+.popup-form input[type="text"]:required:invalid {
+  border-color: #e74246;
   color: #e74246;
-  border: 2px solid #e74246;
 }
 
-
-
-
-
-/* .name input[type="text"]:required,
-.name input[type="text"]:invalid {
-  border: 2px solid red;
-  color: red;
+.popup-form textarea:required:invalid {
+  border-color: #e74246;
+  color: #e74246;
 }
-
-.mail input[type="e-mail"]:required:invalid {
-  border: 2px solid red;
-  color: red;
-} */
-
 
 
 .modal-button {
@@ -1038,9 +1041,9 @@ input[type="text"]:required:invalid {
   transform: rotate(-45deg);
 }
 
-/* .popup {
+ .popup {
   display: none;
-} */
+}
 
 /*-----------форма обратной связи конец-------*/
 .social-connection {
