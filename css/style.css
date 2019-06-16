@@ -614,12 +614,10 @@ img {
   opacity: 1;
 }
 
-.filter-input-radio:disabled+.label-radio {
-  opacity: 0.3;
-}
-
+.filter-input-radio:disabled+.label-radio,
 .filter-input-radio:checked:disabled+.label-radio {
   opacity: 0.3;
+  cursor: auto;
 }/* а здесь disabled работает только когад он возле инпута*/
 
 
@@ -641,15 +639,19 @@ img {
   background-image: url(../img/icons/icon-filter/icon-checkbox-on.svg);
 }
 
-/* .label-checkbox:hover::before,
-.filter-input-checkbox:hover+.label-checkbox::before {
-  opacity: 1;
-} */ /*cтарое правило пока  убрал*/
-
 .label-checkbox:hover::before,
 .label-checkbox:checked:hover::before {
   opacity: 1;
 }
+
+/*
+.filter-input-radio:not(:disabled)+.label-radio:hover::before,
+.filter-input-radio:checked:not(:disabled)+.label-radio:hover::before {
+  opacity: 1;
+}
+*/
+
+
 
 .filter-input-checkbox:focus+.label-checkbox::before,
 .filter-input-checkbox:checked:focus+.label-checkbox::before {
@@ -659,6 +661,7 @@ img {
 .filter-input-checkbox:disabled+.label-checkbox::before,
 .filter-input-checkbox:checked:disabled+.label-checkbox::before {
   opacity: 0.3;
+  cursor: auto;
 }
 
 .filter-button {
