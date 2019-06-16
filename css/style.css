@@ -35,7 +35,6 @@ body>*>*>*>*>* {
 body>*>*>*>*>*>* {
   background: rgba(150, 110, 110, 0.3);
 } */
-
 a {
   text-decoration: none;
 }
@@ -116,7 +115,6 @@ img {
 }
 
 /*стили для подчеркивания активного пунка меню.*/
-
 .menu-item-current {
   position: relative;
 }
@@ -551,6 +549,101 @@ img {
   margin-bottom: 47px;
 }
 
+/*стили сложного фильтра*/
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  padding-top: 39px;
+  margin-bottom: 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  box-sizing: content-box;
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+/*стили сложного фильтра*/
 .filter legend {
   font-size: 18px;
   font-weight: 700;
@@ -569,7 +662,6 @@ img {
 
 .filter-option {
   margin-bottom: 20px;
-
 }
 
 .filter-option-rubber,
@@ -577,14 +669,13 @@ img {
   margin-bottom: 0;
 }
 
-
 .label-radio,
 .label-checkbox {
   position: relative;
   display: block;
   cursor: pointer;
   padding-left: 36px;
-  }
+}
 
 .label-radio:before {
   content: "";
@@ -607,10 +698,11 @@ img {
 .filter-input-radio:not(:disabled)+.label-radio:hover::before,
 .filter-input-radio:checked:not(:disabled)+.label-radio:hover::before {
   opacity: 1;
-} /*здесь hover работает независимо от того у инпута он или у радио*/
+}
 
+/*здесь hover работает независимо от того у инпута он или у радио*/
 .filter-input-radio:focus+.label-radio::before,
-.filter-input-radio:checked:focus+.label-radio::before  {
+.filter-input-radio:checked:focus+.label-radio::before {
   opacity: 1;
 }
 
@@ -618,9 +710,9 @@ img {
 .filter-input-radio:checked:disabled+.label-radio {
   opacity: 0.3;
   cursor: auto;
-}/* а здесь disabled работает только когад он возле инпута*/
+}
 
-
+/* а здесь disabled работает только когад он возле инпута*/
 .label-checkbox::before {
   content: "";
   position: absolute;
@@ -650,9 +742,6 @@ img {
   opacity: 1;
 }
 */
-
-
-
 .filter-input-checkbox:focus+.label-checkbox::before,
 .filter-input-checkbox:checked:focus+.label-checkbox::before {
   opacity: 1;
@@ -668,7 +757,7 @@ img {
   color: #000000;
   background-color: #eeeeee;
   width: 260px;
-  }
+}
 
 .filter-button:hover,
 .filter-button:focus {
@@ -744,7 +833,6 @@ img {
   background-color: #eeeeee;
   position: absolute;
   width: 360px;
-  /* top: 352px; */
   bottom: 0;
 }
 
@@ -758,7 +846,6 @@ img {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
-}
 }
 
 .button-price:active {
@@ -820,7 +907,7 @@ img {
   border: 3px solid transparent;
   background-color: #eeeeee;
   text-transform: uppercase;
-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .pagination-item a:not([href]) {
@@ -830,7 +917,7 @@ border-radius: 3px;
 
 .pagination-item:last-child a {
   min-width: 260px;
-  }
+}
 
 .pagination-item-current a {
   border: solid 3px #dbdbdb;
@@ -842,7 +929,6 @@ border-radius: 3px;
 
 .pagination-item a[href]:active {
   background-color: #d5d5d5;
-  /* box-shadow: inset 0 3px 0 0 #bfbfbf; */
   border-top: solid 3px #bfbfbf;
   color: #a9a9a9;
 }
@@ -869,9 +955,6 @@ border-radius: 3px;
 .contacts {
   line-height: 18px;
   color: #666666;
-  /* margin-top: 54px;
-  margin-bottom: 54px;
-  width: 319px; */
 }
 
 .contact-name {
@@ -901,7 +984,6 @@ border-radius: 3px;
 }
 
 /*--------форма обратной связи начало---------*/
-
 .popup {
   display: block;
   position: fixed;
@@ -1001,7 +1083,6 @@ border-radius: 3px;
   color: #e74246;
 }
 
-
 .modal-button {
   display: block;
   width: 260px;
@@ -1047,7 +1128,7 @@ border-radius: 3px;
   transform: rotate(-45deg);
 }
 
-  .popup {
+.popup {
   display: none;
 }
 
@@ -1085,15 +1166,6 @@ border-radius: 3px;
   fill: #e37376;
 }
 
-/* .social-button:hover,
-.social-button:focus {
-  background-color: #e74246;
-}
-
-.social-button:active {
-  background-color: #d7373b;
-} */
-/*лишние стили, на соцкнопки действуют общие стили*/
 .friendship {
   font-size: 36px;
   font-weight: 700;
