@@ -656,7 +656,10 @@ img {
   opacity: 1;
 }
 
-
+.filter-input-checkbox:disabled+.label-checkbox::before,
+.filter-input-checkbox:checked:disabled+.label-checkbox::before {
+  opacity: 0.3;
+}
 
 .filter-button {
   color: #000000;
@@ -1041,7 +1044,7 @@ border-radius: 3px;
   transform: rotate(-45deg);
 }
 
- .popup {
+  .popup {
   display: none;
 }
 
