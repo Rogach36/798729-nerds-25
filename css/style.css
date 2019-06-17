@@ -926,7 +926,7 @@ img {
   border: solid 3px #dbdbdb;
 }
 
-.pagination-item a:hover {
+.pagination-item a[href]:hover {
   background-color: #dfdfdf;
 }
 
@@ -1132,9 +1132,9 @@ img {
   transform: rotate(-45deg);
 }
 
-/* .popup {
+.popup {
   display: none;
-} */
+}
 
 /*-----------форма обратной связи конец-------*/
 .social-connection {
