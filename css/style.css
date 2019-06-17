@@ -15,7 +15,7 @@ body {
   /*вернуть фон после макросетки*/
   font-size: 16px;
   line-height: 24px;
-}
+  }
 
 /* body>* {
   background: rgba(255, 0, 0, 0.5);
@@ -311,6 +311,7 @@ img {
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
+  outline: none;
 }
 
 .button:hover,
@@ -1042,6 +1043,7 @@ img {
   padding-left: 14px;
   padding-top: 12px;
   padding-bottom: 15px;
+  outline: none;
 }
 
 .name input {
@@ -1130,9 +1132,9 @@ img {
   transform: rotate(-45deg);
 }
 
-.popup {
+/* .popup {
   display: none;
-}
+} */
 
 /*-----------форма обратной связи конец-------*/
 .social-connection {
