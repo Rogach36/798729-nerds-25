@@ -107,12 +107,21 @@ img {
   margin-top: 25px;
 }
 
-.site-navigation li {
-  margin-left: 50px;
-}
+/* .site-navigation li {
+  margin-left: 46px;
+} */
 
 .site-navigation li:first-child {
   margin-left: 0;
+}
+
+.site-navigation li:nth-child(2),
+.site-navigation li:nth-child(3) {
+  margin-left: 47px;
+}
+
+.site-navigation li:nth-child(4) {
+  margin-left: 45px;
 }
 
 /*стили для подчеркивания активного пунка меню.*/
