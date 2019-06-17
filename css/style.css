@@ -932,6 +932,8 @@ img {
 
 .pagination-item a[href]:active {
   background-color: #d5d5d5;
+  border-right: none;
+  border-left: none;
   border-top: solid 3px #bfbfbf;
   color: #a9a9a9;
 }
