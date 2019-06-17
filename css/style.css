@@ -116,13 +116,13 @@ img {
 
 /*стили для подчеркивания активного пунка меню.*/
 .menu-item-current {
+  display: block;
   position: relative;
 }
 
 .menu-item-current::after {
   content: "";
   position: absolute;
-  display: block;
   background-color: #fb565a;
   left: 0;
   width: 100%;
