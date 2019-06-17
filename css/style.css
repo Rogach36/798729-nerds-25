@@ -915,15 +915,18 @@ img {
 
 .pagination-item a:not([href]) {
   background: none;
-  border-color: solid 3px #dbdbdb;
+  /* border-color: solid 3px #dbdbdb; */
+}
+/*ненужное свойство*/ /*праило ниже дублирующиее,
+можно оставить одно, только объединить свойства т.к.
+применяются к одному элементу*/
+
+.pagination-item-current a {
+  border: solid 3px #dbdbdb;
 }
 
 .pagination-item:last-child a {
   min-width: 260px;
-}
-
-.pagination-item-current a {
-  border: solid 3px #dbdbdb;
 }
 
 .pagination-item a[href]:hover {
