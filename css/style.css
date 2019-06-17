@@ -101,6 +101,7 @@ img {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 440px;
   margin-left: 200px;
   margin-top: 25px;
