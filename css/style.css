@@ -633,9 +633,11 @@ img {
 .price-controls label {
   display: inline-block;
   width: 50%;
+  line-height: 22px;
   font-size: 16px;
   text-transform: uppercase;
   vertical-align: baseline;
+  color: #283136;
 }
 
 .price-controls input {
