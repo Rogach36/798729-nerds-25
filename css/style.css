@@ -398,8 +398,10 @@ img {
 
 .ability-title {
   font-weight: 700;
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 24px;
+
 }
 
 .ability-list {
