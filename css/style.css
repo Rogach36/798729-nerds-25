@@ -24,7 +24,7 @@ body {
 body>*>* {
   background: rgba(225, 235, 223, 0.3);
 } */
-/* body>*>*>* {
+ body>*>*>* {
   background: rgba(44, 176, 21, 0.3);
 }
 
@@ -34,7 +34,7 @@ body>*>*>*>*>* {
 
 body>*>*>*>*>*>* {
   background: rgba(150, 110, 110, 0.3);
-} */
+}
 a {
   text-decoration: none;
 }
@@ -809,6 +809,10 @@ img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
+.catalog-item img {
+  vertical-align: top;
+  }
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
