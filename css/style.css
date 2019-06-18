@@ -620,6 +620,7 @@ img {
   background-color: #ababab;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-sizing: content-box;
 }
 
 .range-controls .toggle-min {
@@ -632,6 +633,7 @@ img {
 
 .price-controls {
   font-size: 0;
+  box-sizing: content-box;
 }
 
 .price-controls label {
