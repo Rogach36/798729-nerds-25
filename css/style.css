@@ -799,10 +799,17 @@ img {
 .filter-sort {
   display: flex;
   flex-wrap: wrap;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
 }
 
 .sort-title {
   min-width: 200px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-type,
@@ -816,14 +823,31 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-width: 500px;
-  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 200px;
+}
+
+.sorting-type li {
+margin-left: 30px;
+}
+
+.sorting-type li:first-child {
+  margin-left: 0;
 }
 
 .sorting-direction {
   display: flex;
   width: 60px;
-
 }
+
+.down,
+.up {
+width: 12px;
+height: 12px;
+border-color: #000000;
+}
+
 
 /*--------------сортировка карточек--------------------*/
 /*----------------карточки товаров------------*/
