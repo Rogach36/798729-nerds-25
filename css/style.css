@@ -802,7 +802,7 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 57px;
-}
+  }
 
 .sort-title {
   min-width: 200px;
@@ -838,40 +838,36 @@ margin-left: 30px;
 
 .sorting-direction {
   display: flex;
+  flex-wrap: wrap;
   width: 60px;
-  background-color: blue;
+  margin-left: auto;
+  justify-content: flex-start;
+
 }
 
 .down,
 .up {
   position: relative;
-  display: block;
-
-}
+  width: 0;
+  height: 0;
+  }
 
 .down::before {
   content: "";
   position: absolute;
-  width: 0;
-  height: 0;
-  border: solid 7px black;
-  border-right-color: transparent;
-  border-left-color: transparent;
-  border-top-width: 13px;
-  border-bottom: 0;
+  border: 7px solid transparent;
+  border-top: 13px solid #000000;
+  margin-left: 20px;
+  top: 2px;
   }
 
   .up::before {
     content: "";
     position: absolute;
-    width: 0;
-    height: 0;
-    border: solid 7px black;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    border-bottom-width: 13px;
-    border-top: 0;
-    margin-left: 15px;
+    border: 7px solid transparent;
+    border-bottom: 13px solid #000000;
+    top: -5px;
+    margin-left: 45px;
     }
 
 
