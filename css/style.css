@@ -1111,10 +1111,10 @@ opacity: 1;
   padding-bottom: 54px;
   background-image: url(../img/map/merged-map.png);
   background-position: 50% 50%;
-  position: relative;
+  /* position: relative; */
   }
 
- iframe {
+ /* iframe {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1123,7 +1123,7 @@ opacity: 1;
   top: 0;
   left: 0;
   z-index: 0;
-}
+} */
 
 
 .wrapper-contacts {
