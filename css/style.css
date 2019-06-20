@@ -711,12 +711,12 @@ img {
   top: -4px;
   border-radius: 50%;
   opacity: 0.4;
-  background: radial-gradient(#00ffff00 9px, #4d4d4d 9px, #4d4d4d 13px);
+  background: radial-gradient(transparent 9px, #4d4d4d 9px, #4d4d4d 13px);
 }
 
 .filter-input-radio:checked+.label-radio::before {
   content: "";
-  background: radial-gradient(#4d4d4d 4px, #ffffff 4px, #ffffff 9px, #4d4d4d 9px, #4d4d4d 13px);
+  background: radial-gradient(#4d4d4d 5px, transparent 5px, transparent 9px, #4d4d4d 9px, #4d4d4d 13px);
 }
 
 .filter-input-radio:not(:disabled)+.label-radio:hover::before,
