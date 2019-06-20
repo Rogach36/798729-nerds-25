@@ -836,6 +836,37 @@ margin-left: 30px;
   margin-left: 0;
 }
 
+.sorting-type a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sorting-type a:hover,
+.sorting-type a:focus {
+  color: #000000;
+opacity: 0.6;
+}
+
+.sorting-type a:active {
+  color: #000000;
+opacity: 1;
+}
+
+.sorting-direction a {
+  color: #000000;
+  opacity: 0.2;
+}
+
+.sorting-direction a:hover {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.sorting-direction a:active {
+  color: #000000;
+  opacity: 1;
+}
+
 .sorting-direction {
   display: flex;
   flex-wrap: wrap;
