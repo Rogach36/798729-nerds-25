@@ -204,6 +204,36 @@ img {
 }
 
 .sliders-controls a {
+  display: inline-block;
+  position: relative;
+  top: 9px;
+  left: 9px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.active-control::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  background: radial-gradient(#ffffff 2px, #c1c1c1 2px, #c1c1c1 8px);
+}
+
+.control-2,
+.control-3 {
+  margin-left: 9px;
+}
+
+
+
+/* .sliders-controls a {
   position: relative;
   display: inline-block;
   width: 18px;
@@ -224,7 +254,7 @@ img {
   height: 18px;
   background-color: #ffffff;
   border-radius: 50%;
-}
+} */
 
 .features-slide {
   padding-top: 78px;
