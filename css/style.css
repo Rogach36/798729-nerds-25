@@ -350,13 +350,25 @@ margin-left: 0;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin-bottom: 16px;
+  margin-top: 17px;
 }
 
 .service-item-slogan {
   color: #283136;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
+}
+
+.service-item-slogan-1 {
+  padding-right: 15px;
+}
+
+.service-item-slogan-2 {
+padding-left: 2px;
+}
+
+.service-item-slogan-3 {
+  padding-right: 20px;
 }
 
 .button {
