@@ -435,6 +435,7 @@ padding-left: 2px;
 .description-company {
   display: flex;
   margin-bottom: 70px;
+border-top: 2px solid #eeeeee;
 }
 
 .wrapper-about {
@@ -450,12 +451,15 @@ padding-left: 2px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  margin-top: 73px;
   margin-bottom: 27px;
+  paddin-left: 2px;
 }
 
 .principle-explain {
   color: #283136;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
+  padding-top: 6px;
 }
 
 .ability-title {
