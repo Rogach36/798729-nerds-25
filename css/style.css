@@ -103,25 +103,27 @@ img {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 440px;
-  margin-left: 200px;
-  margin-top: 25px;
+  width: 470px;
+  margin-left: 201px;
+  margin-top: 26px;
 }
 
-/* .site-navigation li {
-  margin-left: 46px;
-} */
-.site-navigation li:first-child {
-  margin-left: 0;
+ .site-navigation li {
+  margin-right: 46px;
 }
 
-.site-navigation li:nth-child(2),
+.site-navigation li:nth-child(2) {
+margin-right: 48px;
+margin-left: 0;
+}
+
 .site-navigation li:nth-child(3) {
-  margin-left: 47px;
+margin-right: 45px;
+margin-left: 0;
 }
 
-.site-navigation li:nth-child(4) {
-  margin-left: 45px;
+.site-navigation li:last-child {
+  margin-right: 0;
 }
 
 /*стили для подчеркивания активного пунка меню.*/
@@ -148,9 +150,13 @@ img {
   margin-top: 25px;
 }
 
+/* .order li {
+  width: 110px;
+} */
+
 .order .order-link {
   position: relative;
-  padding-left: 35px;
+  padding-left: 50px;
 }
 
 .order-link::before {
@@ -158,7 +164,7 @@ img {
   position: absolute;
   width: 15px;
   height: 15px;
-  left: 0px;
+  left: 10px;
   top: 7px;
   background-image: url("../img/icons/icon-cart.svg");
   background-repeat: no-repeat;
@@ -257,7 +263,7 @@ img {
 } */
 
 .features-slide {
-  padding-top: 78px;
+  padding-top: 69px;
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 80px;
