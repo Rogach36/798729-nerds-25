@@ -434,7 +434,7 @@ padding-left: 2px;
 /*---------------------------Описание компании----------------*/
 .description-company {
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 55px;
 border-top: 2px solid #eeeeee;
 }
 
@@ -541,7 +541,7 @@ border-top: 2px solid #eeeeee;
   padding-right: 25px;
 } */
 
-.pocent-smb {
+.procent-smb {
   vertical-align: super;
   font-size: 25px;
   font-weight: 700;
@@ -549,7 +549,7 @@ border-top: 2px solid #eeeeee;
 
 /*------------------------Партнеры компании--------------*/
 .partners {
-  padding-top: 60px;
+  padding-top: 75px;
   margin-bottom: 80px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -561,16 +561,36 @@ border-top: 2px solid #eeeeee;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 36px;
 }
 
 .partners-list li {
   position: relative;
   width: 260px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
-  padding-left: 35px;
-  text-align: center;
+   /* margin-left: auto; */
+  /* margin-right: auto;
+  margin-bottom: 24px; */
+  /*padding-left: 35px;
+  text-align: center; */
+}
+
+.partners-list li:first-child {
+  margin-top: -12px;
+}
+
+.partners-list li:nth-child(2) {
+  margin-top: -28px;
+  margin-left: 41px;
+}
+
+.partners-list li:nth-child(3) {
+  margin-top: -9px;
+  margin-left: 40px;
+}
+
+.partners-list li:last-child {
+  margin-top: -22px;
+  margin-left: 39px;
 }
 
 .partners-list li::after {
@@ -578,10 +598,17 @@ border-top: 2px solid #eeeeee;
   position: absolute;
   width: 2px;
   height: 52px;
-  bottom: 35px;
-  left: 5px;
+  bottom: 28px;
+  left: -21px;
   background: #eeeeee;
 }
+
+.partners-list li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: 27px;
+}
+
 
 .partners-list li:first-child::after {
   content: "";
