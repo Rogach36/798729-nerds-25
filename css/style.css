@@ -635,8 +635,9 @@ border-top: 2px solid #eeeeee;
 
 /*отсюда начинается разметка страницы каталога*/
 .head-name {
-  padding-top: 83px;
-  padding-bottom: 117px;
+  padding-top: 67px;
+  padding-bottom: 107px;
+  margin-right: 1px;
 }
 
 .page-title {
@@ -901,7 +902,8 @@ border-top: 2px solid #eeeeee;
   flex-wrap: wrap;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 57px;
+  margin-bottom: 56px;
+  margin-top: 60px;
   }
 
 .sort-title {
@@ -910,7 +912,7 @@ border-top: 2px solid #eeeeee;
   font-weight: 700;
   margin: 0;
   padding: 0;
-}
+  }
 
 .sorting-type,
 .sorting-direction {
@@ -929,7 +931,7 @@ border-top: 2px solid #eeeeee;
 }
 
 .sorting-type li {
-margin-left: 30px;
+margin-left: 26px;
 }
 
 .sorting-type li:first-child {
@@ -972,9 +974,7 @@ opacity: 1;
   flex-wrap: wrap;
   width: 60px;
   margin-left: auto;
-  justify-content: flex-start;
-
-}
+  }
 
 .down,
 .up {
@@ -988,8 +988,8 @@ opacity: 1;
   position: absolute;
   border: 7px solid transparent;
   border-top: 13px solid #000000;
-  margin-left: 20px;
-  top: 2px;
+  margin-left: 18px;
+  top: 3px;
   }
 
   .up::before {
@@ -998,7 +998,7 @@ opacity: 1;
     border: 7px solid transparent;
     border-bottom: 13px solid #000000;
     top: -5px;
-    margin-left: 45px;
+    margin-left: 46px;
     }
 
 
