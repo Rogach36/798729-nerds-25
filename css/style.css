@@ -1178,7 +1178,7 @@ opacity: 1;
 .location {
   background-color: #888888;
   padding-top: 54px;
-  padding-bottom: 54px;
+  padding-bottom: 55px;
   background-image: url(../img/map/merged-map.png);
   background-position: 50% 50%;
   /* position: relative; */
@@ -1201,9 +1201,10 @@ opacity: 1;
   background-color: #ffffff;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 54px;
+  /* padding-top: 54px; */
+  padding-top: 51px;
   padding-bottom: 47px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .contacts {
@@ -1217,22 +1218,26 @@ opacity: 1;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 27px;
+  /* margin-bottom: 27px; */
+  margin-bottom: 22px;
   margin-top: 0;
 }
 
 .contact-address {
-  margin-bottom: 17px;
+  /* margin-bottom: 17px; */
+  margin-bottom: 19px;
+  margin-left: 2px;
   padding-right: 5px;
 }
 
 .contact-phone a {
   color: #666666;
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
+  margin-left: 2px;
 }
 
 .button-connect {
-  margin-top: 35px;
+  margin-top: 37px;
   padding-left: 44px;
   padding-right: 44px;
 }
