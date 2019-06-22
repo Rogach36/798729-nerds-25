@@ -276,7 +276,7 @@ margin-left: 0;
 } */
 
 .features-slide {
-  padding-top: 69px;
+  padding-top: 67px;
   padding-right: 0;
   padding-left: 0;
   padding-bottom: 80px;
@@ -305,7 +305,7 @@ margin-left: 0;
 .slide-slogan {
   max-width: 600px;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -317,11 +317,13 @@ margin-left: 0;
   max-width: 430px;
   color: #283136;
   padding-left: 1px;
+  margin-bottom: 41px;
 }
 
 .button-info {
   width: 240px;
   font-size: 16px;
+  paddi
 }
 
 /*------------------------Услуги компании------------------*/
@@ -434,7 +436,7 @@ padding-left: 2px;
 /*---------------------------Описание компании----------------*/
 .description-company {
   display: flex;
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 border-top: 2px solid #eeeeee;
 }
 
