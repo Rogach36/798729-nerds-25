@@ -1103,14 +1103,14 @@ opacity: 1;
 .catalog-item::after {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: #ffffff;
-  top: -28px;
-  left: 18px;
-  box-shadow: 26px 0 0 0 #ffffff,
-    52px 0 0 0 #ffffff;
+  top: -27px;
+  left: 16px;
+  box-shadow: 23px 0 0 0 #ffffff,
+    46px 0 0 0 #ffffff;
 }
 
 .pagination-list {
