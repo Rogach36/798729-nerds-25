@@ -1395,21 +1395,26 @@ opacity: 1;
 /*-----------форма обратной связи конец-------*/
 .social-connection {
   display: flex;
-  padding-top: 70px;
+  /* padding-top: 70px; */
+  padding-top: 37px;
   padding-bottom: 70px;
+
 }
 
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  width: 260px;
-  align-items: center;
   justify-content: space-between;
+  width: 260px;
+  margin-top: 17px;
+  align-items: center;
+
 }
 
 .for-friends {
   width: 563px;
   margin-left: 140px;
+  margin-bottom: 1px;
 }
 
 .social-button {
@@ -1436,4 +1441,5 @@ opacity: 1;
 .discont {
   line-height: 22px;
   color: #444444;
+  margin-top: 0;
 }
