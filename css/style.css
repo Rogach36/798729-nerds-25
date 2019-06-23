@@ -653,6 +653,7 @@ border-top: 2px solid #eeeeee;
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-between;
+  padding-top: 56px;
 }
 
 .filters {
@@ -663,8 +664,14 @@ border-top: 2px solid #eeeeee;
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 47px;
+  margin-bottom: 55px;
 }
+
+.filter .filter-features {
+  margin-top: -11px;
+  margin-bottom: 49px;
+}
+
 
 /*стили сложного фильтра*/
 .filter-item {
@@ -679,7 +686,7 @@ border-top: 2px solid #eeeeee;
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 31px;
 }
 
 .filter-item legend {
@@ -752,8 +759,8 @@ border-top: 2px solid #eeeeee;
 .price-controls input {
   box-sizing: content-box;
   width: 60px;
-  padding: 8px 10px;
-  margin-left: 10px;
+  padding: 7px 10px;
+  margin-left: 8px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -903,7 +910,9 @@ border-top: 2px solid #eeeeee;
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 56px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  margin-top: 5px;
+
   }
 
 .sort-title {
@@ -912,6 +921,7 @@ border-top: 2px solid #eeeeee;
   font-weight: 700;
   margin: 0;
   padding: 0;
+  margin-top: -1px;
   }
 
 .sorting-type,
@@ -1006,6 +1016,7 @@ opacity: 1;
 /*----------------карточки товаров------------*/
 .catalog {
   width: 760px;
+  margin-bottom: -2px;
 }
 
 .catalog-item {
@@ -1118,12 +1129,13 @@ opacity: 1;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-top:27px;
   padding-bottom: 60px;
   list-style: none;
 }
 
 .pagination-item {
-  margin-right: 20px;
+  margin-right: 11px;
 }
 
 .pagination-item:last-child {
