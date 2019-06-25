@@ -1203,13 +1203,11 @@ img {
   left: 0;
   z-index: 0;
 } */
-
 .wrapper-contacts {
   width: 319px;
   background-color: #ffffff;
   padding-left: 50px;
   padding-right: 50px;
-
   padding-top: 51px;
   padding-bottom: 47px;
   /* z-index: 1; */
@@ -1260,12 +1258,13 @@ img {
   background-color: #ffffff;
   z-index: 10;
   width: 960px;
-  padding-top: 60px;
+  padding-top: 68px;
   padding-right: 100px;
   padding-left: 100px;
   padding-bottom: 84px;
   transform: translateY(-50%);
   box-shadow: 0 15px 20px 10px #5e5f5f;
+  /* border: solid 1px #000; */
 }
 
 .popup-form {
@@ -1276,27 +1275,27 @@ img {
   font-weight: 700;
   line-height: 18px;
   position: relative;
-  margin-top: 51px;
+  margin-left: -1px;
 }
 
 .popup-title {
   margin: 0;
-  /* margin-bottom: 38px; */
-
+  margin-bottom: 41px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  margin-left: -1px;
 }
 
 .name,
 .mail,
 .letter {
   margin: 0;
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
 }
 
 .letter {
-  /* margin-bottom: 47px; */
+  margin-bottom: 47px;
   width: 100%;
 }
 
@@ -1304,7 +1303,7 @@ img {
 .mail input,
 .letter textarea {
   display: block;
-   /* margin-top: 10px; */
+  margin-top: 10px;
   padding-left: 14px;
   padding-top: 12px;
   padding-bottom: 15px;
@@ -1313,7 +1312,7 @@ img {
 
 .name input {
   width: 360px;
-  /* margin-bottom: 32px; */
+  margin-bottom: 32px;
 }
 
 .mail input {
@@ -1322,8 +1321,8 @@ img {
 
 .letter textarea {
   width: 100%;
-  /* margin-top: 10px; */
   padding-bottom: 83px;
+  margin-bottom: -12px;
 }
 
 .popup-form input,
@@ -1343,15 +1342,14 @@ img {
 }
 
 /* .popup-form input[type="text"]:required:invalid {
-  border-color: #e74246;
-  color: #e74246;
+border-color: #e74246;
+color: #e74246;
 }
 
 .popup-form textarea:required:invalid {
-  border-color: #e74246;
-  color: #e74246;
+border-color: #e74246;
+color: #e74246;
 } */
-
 .modal-button {
   display: block;
   width: 260px;
@@ -1397,10 +1395,9 @@ img {
   transform: rotate(-45deg);
 }
 
-.popup {
-  /* display: none; */
-}
-
+/* .popup {
+display: none;
+} */
 /*-----------форма обратной связи конец-------*/
 .social-connection {
   display: flex;
