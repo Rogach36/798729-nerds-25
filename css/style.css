@@ -1055,7 +1055,7 @@ img {
   background-color: #eeeeee;
   bottom: 0;
   text-align: center;
-  /* display: none; */
+  display: none;
 }
 
 .description-sedona,
@@ -1311,12 +1311,12 @@ img {
 }
 
 .name input {
-  width: 260px;
+  width: 360px;
   margin-bottom: 32px;
 }
 
 .mail input {
-  width: 260px;
+  width: 360px;
 }
 
 .letter textarea {
@@ -1341,7 +1341,7 @@ img {
   border: 2px solid #000000;
 }
 
-.popup-form input[type="text"]:required:invalid {
+/* .popup-form input[type="text"]:required:invalid {
   border-color: #e74246;
   color: #e74246;
 }
@@ -1349,7 +1349,7 @@ img {
 .popup-form textarea:required:invalid {
   border-color: #e74246;
   color: #e74246;
-}
+} */
 
 .modal-button {
   display: block;
@@ -1397,7 +1397,7 @@ img {
 }
 
 .popup {
-  display: none;
+  /* display: none; */
 }
 
 /*-----------форма обратной связи конец-------*/
