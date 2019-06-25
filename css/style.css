@@ -1276,11 +1276,13 @@ img {
   font-weight: 700;
   line-height: 18px;
   position: relative;
+  margin-top: 51px;
 }
 
 .popup-title {
   margin: 0;
-  margin-bottom: 38px;
+  /* margin-bottom: 38px; */
+
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -1289,13 +1291,12 @@ img {
 .name,
 .mail,
 .letter {
-  width: 360px;
   margin: 0;
   margin-bottom: 35px;
 }
 
 .letter {
-  margin-bottom: 47px;
+  /* margin-bottom: 47px; */
   width: 100%;
 }
 
@@ -1303,7 +1304,7 @@ img {
 .mail input,
 .letter textarea {
   display: block;
-  margin-top: 10px;
+   /* margin-top: 10px; */
   padding-left: 14px;
   padding-top: 12px;
   padding-bottom: 15px;
@@ -1312,7 +1313,7 @@ img {
 
 .name input {
   width: 360px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .mail input {
@@ -1321,7 +1322,7 @@ img {
 
 .letter textarea {
   width: 100%;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   padding-bottom: 83px;
 }
 
