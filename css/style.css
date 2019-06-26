@@ -1218,6 +1218,8 @@ iframe {
 .contacts {
   line-height: 18px;
   color: #666666;
+  position: relative;
+  z-index: 5;
 }
 
 .contact-name {
