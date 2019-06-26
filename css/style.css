@@ -1402,6 +1402,10 @@ color: #e74246;
  .popup {
 display: none;
 }
+
+.popup-show {
+  display: block;
+}
 /*-----------форма обратной связи конец-------*/
 .social-connection {
   display: flex;
