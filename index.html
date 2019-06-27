@@ -172,19 +172,24 @@
     </section>
   </footer>
   <script>
+
   var link = document.querySelector(".button-connect");
   var popup = document.querySelector(".popup");
   var close = document.querySelector(".modal-close");
+  var username = popup.querySelector("[name=fullname]");
+
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("popup-show");
-  })
+    username.focus();
+  });
 
-    close.addEventListener("click", function(evt){
+    close.addEventListener("click", function(evt) {
       evt.preventDefault();
         popup.classList.remove("popup-show");
-    })
+    });
+
   </script>
 </body>
 
