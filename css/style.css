@@ -1405,6 +1405,17 @@ display: none;
 
 .popup-show {
   display: block;
+  animation-name: glide;
+  animation-duration: 1s;
+}
+
+@keyframes glide {
+  0% {transform: translateX(-2000px);}
+  25% {transform: rotate(-90deg);}
+  50% {transform: rotate(360deg);}
+  70% {transform: translateX(30px);}
+  90% {transform: translateX(-10px);}
+  100% {transform: translateX(0);}
 }
 /*-----------форма обратной связи конец-------*/
 .social-connection {
