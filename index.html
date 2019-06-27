@@ -199,6 +199,17 @@
         evt.preventDefault();
       console.log("Введите текст");
     });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (popup.classList.contains("popup-show")) {
+          evt.preventDefault();
+          popup.classList.remove("popup-show");
+        }
+      }
+    });
+
+
   </script>
 </body>
 
