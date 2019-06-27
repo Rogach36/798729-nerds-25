@@ -225,21 +225,7 @@
         <p class="discont">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </section>
-    <script>
-    var link = document.querySelector(".button-connect");
-    var popup = document.querySelector(".popup");
-    var close = document.querySelector(".modal-close");
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("popup-show");
-    })
-
-      close.addEventListener("click", function(evt){
-        evt.preventDefault();
-          popup.classList.remove("popup-show");
-      })
-    </script>
+    <script src="js/popup.js"></script>
   </footer>
 </body>
 
