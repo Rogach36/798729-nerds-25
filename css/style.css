@@ -1300,7 +1300,7 @@ iframe {
 .letter {
   margin-bottom: 47px;
   width: 100%;
-}
+  }
 
 .name input,
 .mail input,
@@ -1326,6 +1326,7 @@ iframe {
   width: 100%;
   padding-bottom: 83px;
   margin-bottom: -12px;
+  resize: none;
 }
 
 .popup-form input,
