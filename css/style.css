@@ -816,7 +816,7 @@ img {
 
 .filter-input-radio:checked+.label-radio::before {
   content: "";
-  background: radial-gradient(#4d4d4d 5px, transparent 5px, transparent 9px, #4d4d4d 9px, #4d4d4d 13px);
+  background: radial-gradient(#4d4d4d 4px, transparent 5px, transparent 8px, #4d4d4d 9px, #4d4d4d 13px);
 }
 
 .filter-input-radio:not(:disabled)+.label-radio:hover::before,
@@ -1418,16 +1418,15 @@ display: none;
   100% {transform: translateX(0);}
 }
 
+.modal-error {
+  animation-name: shake;
+  animation-duration: 1s;
+}
+
 @keyframes shake {
   0%, 100% {transform: translateX(0);}
   10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);}
   20%, 40%, 60%, 80% {transition: translateX(5px);}
-
-  .modal-error {
-    animation-name: shake;
-    animation-duration: 1s;
-  }
-
 }
 /*-----------форма обратной связи конец-------*/
 .social-connection {
