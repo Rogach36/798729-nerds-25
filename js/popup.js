@@ -2,9 +2,9 @@ var link = document.querySelector(".button-connect");
 var popup = document.querySelector(".popup");
 var close = document.querySelector(".modal-close");
 var form = popup.querySelector(".popup-form");
-var username = popup.querySelector(".focus-name");
-var usermail = popup.querySelector(".mail");
-var message = popup.querySelector(".letter");
+var username = popup.querySelector(".field-name");
+var usermail = popup.querySelector(".field-mail");
+var message = popup.querySelector(".field-message");
 
 link.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -22,8 +22,10 @@ close.addEventListener("click", function(evt) {
 form.addEventListener("submit", function(evt) {
   if (!username.value || !usermail.value || !message.value)
     evt.preventDefault();
+    console.log("Нужно ввести данные");
   popup.classList.add("modal-error");
-  popup.offsetWidth = popup.offsetWidth;
+  // username.classList.add("invalid");
+  //popup.offsetWidth = popup.offsetWidth;
 });
 
 window.addEventListener("keydown", function (evt) {
