@@ -1193,6 +1193,9 @@ img {
  position: relative;
 }
 
+.location .container-center {
+  pointer-events: none;
+}
 iframe {
   position: absolute;
   width: 100%;
@@ -1211,6 +1214,7 @@ iframe {
   padding-top: 51px;
   padding-bottom: 47px;
   z-index: 10;
+  pointer-events: auto;
 
 }
 
