@@ -17,11 +17,13 @@ try {
 link.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("popup-show");
-  username.focus();
   if (storage) {
     username.value = storage;
+    usermail.focus();
+  } else {
+    username.focus();
   }
-});
+  });
 
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
