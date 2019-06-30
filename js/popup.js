@@ -5,7 +5,14 @@ var form = popup.querySelector(".popup-form");
 var username = popup.querySelector(".field-name");
 var usermail = popup.querySelector(".field-mail");
 var message = popup.querySelector(".field-message");
-var storage = localStorage.getItem("username");
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  storage = localStorage.getItem("username");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 link.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -30,8 +37,10 @@ form.addEventListener("submit", function(evt) {
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
 } else {
-  localStorage.setItem("username", "username.value")
-}
+  if (isStorageSupport) {
+    localStorage.setItem("username", "username.value");
+  }
+  }
 });
 
 form.addEventListener("submit", function(evt) {
