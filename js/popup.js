@@ -23,7 +23,7 @@ link.addEventListener("click", function(evt) {
   } else {
     username.focus();
   }
-  });
+});
 
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -38,38 +38,40 @@ form.addEventListener("submit", function(evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-} else {
-  if (isStorageSupport) {
-    localStorage.setItem("username", "username.value");
-  }
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("username", "username.value");
+    }
   }
 });
 
 form.addEventListener("submit", function(evt) {
- if (!username.value) {
- evt.preventDefault();
- username.classList.add("invalid");
- } else {
-   username.classList.remove("invalid");
- } if (!usermail.value) {
- evt.preventDefault();
- usermail.classList.add("invalid");
- } else {
-   usermail.classList.remove("invalid");
- } if (!message.value) {
- evt.preventDefault();
- message.classList.add("invalid");
- } else {
-   message.classList.remove("invalid");
- }
- });
+  if (!username.value) {
+    evt.preventDefault();
+    username.classList.add("invalid");
+  } else {
+    username.classList.remove("invalid");
+  }
+  if (!usermail.value) {
+    evt.preventDefault();
+    usermail.classList.add("invalid");
+  } else {
+    usermail.classList.remove("invalid");
+  }
+  if (!message.value) {
+    evt.preventDefault();
+    message.classList.add("invalid");
+  } else {
+    message.classList.remove("invalid");
+  }
+});
 
-   window.addEventListener("keydown", function (evt) {
-     if (evt.keyCode === 27) {
-       if (popup.classList.contains("popup-show")) {
-         evt.preventDefault();
-         popup.classList.remove("popup-show");
-         popup.classList.remove("modal-error");
-       }
-     }
-   });
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("popup-show")) {
+      evt.preventDefault();
+      popup.classList.remove("popup-show");
+      popup.classList.remove("modal-error");
+    }
+  }
+});
