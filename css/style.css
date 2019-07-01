@@ -12,29 +12,10 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   color: #000000;
   background-color: #ffffff;
-  /*вернуть фон после макросетки*/
   font-size: 16px;
   line-height: 24px;
 }
 
-/* body>* {
-  background: rgba(255, 0, 0, 0.5);
-}
-
-body>*>* {
-  background: rgba(225, 235, 223, 0.3);
-} */
-/* body>*>*>* {
-  background: rgba(44, 176, 21, 0.3);
-}
-
-body>*>*>*>*>* {
-  background: rgba(69, 150, 153, 0.3);
-}
-
-body>*>*>*>*>*>* {
-  background: rgba(150, 110, 110, 0.3);
-} */
 a {
   text-decoration: none;
 }
@@ -67,14 +48,12 @@ img {
   background-color: #eeeeee;
 }
 
-/*вернуть фон после завершения разметки макросетки*/
 .container-center {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/*---------------Навигация по сайту (меню) header-------------*/
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -125,7 +104,6 @@ img {
   margin-right: 0;
 }
 
-/*стили для подчеркивания активного пунка меню.*/
 .menu-item-current {
   position: relative;
 }
@@ -140,7 +118,6 @@ img {
   height: 3px;
 }
 
-/*стили для подчеркивания активного пунка меню.*/
 .order {
   display: flex;
   flex-wrap: wrap;
@@ -149,9 +126,6 @@ img {
   margin-top: 25px;
 }
 
-/* .order li {
-  width: 110px;
-} */
 .order .order-link {
   position: relative;
   padding-left: 50px;
@@ -173,7 +147,6 @@ img {
 .order a {
   color: #000000;
   display: block;
-  /*задал для ссылок из-за работы с иконкой корзины*/
 }
 
 .site-navigation a:hover,
@@ -188,7 +161,6 @@ img {
   color: #a6a6a6;
 }
 
-/*бокс со СЛАЙДАМИ*/
 .features {
   position: relative;
   background-color: #eeeeee;
@@ -227,8 +199,6 @@ img {
   left: 0;
   border-radius: 50%;
   background-color: inherit;
-  /* border: 6px solid #ffffff;
-  background: radial-gradient(#ffffff 2px, #c1c1c1 2px, #c1c1c1 9px); */
 }
 
 .active-control::after {
@@ -248,28 +218,6 @@ img {
   margin-left: 16px;
 }
 
-/* .sliders-controls a {
-  position: relative;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  padding: 18px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.sliders-controls a::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  top: 9px;
-  left: 9px;
-  z-index: 1;
-  width: 18px;
-  height: 18px;
-  background-color: #ffffff;
-  border-radius: 50%;
-} */
 .features-slide {
   padding-top: 67px;
   padding-right: 0;
@@ -321,7 +269,6 @@ img {
   paddi
 }
 
-/*------------------------Услуги компании------------------*/
 .services {
   margin-bottom: 80px;
 }
@@ -428,7 +375,6 @@ img {
   color: #edc47f;
 }
 
-/*---------------------------Описание компании----------------*/
 .description-company {
   display: flex;
   margin-bottom: 56px;
@@ -495,7 +441,6 @@ img {
 }
 
 .picture-nerds {
-  /* margin-bottom: 30px; */
   margin-bottom: 14px;
   margin-top: 38px;
 }
@@ -529,21 +474,12 @@ img {
   padding-bottom: 36px;
 }
 
-/* .procent td,
-.value td {
-  padding: 20px 0;
-}
-
-.procent td {
-  padding-right: 25px;
-} */
 .procent-smb {
   vertical-align: super;
   font-size: 25px;
   font-weight: 700;
 }
 
-/*------------------------Партнеры компании--------------*/
 .partners {
   padding-top: 75px;
   margin-bottom: 80px;
@@ -563,11 +499,6 @@ img {
 .partners-list li {
   position: relative;
   width: 260px;
-  /* margin-left: auto; */
-  /* margin-right: auto;
-  margin-bottom: 24px; */
-  /*padding-left: 35px;
-  text-align: center; */
 }
 
 .partners-list li:first-child {
@@ -626,7 +557,6 @@ img {
   opacity: 0.1;
 }
 
-/*отсюда начинается разметка страницы каталога*/
 .head-name {
   padding-top: 67px;
   padding-bottom: 107px;
@@ -641,10 +571,8 @@ img {
   margin: 0;
 }
 
-/*--------фильтр-----------*/
 .catalog-cover-columns {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   padding-top: 56px;
 }
@@ -665,7 +593,6 @@ img {
   margin-bottom: 49px;
 }
 
-/*стили сложного фильтра*/
 .filter-item {
   margin: 0;
   padding: 0;
@@ -767,7 +694,6 @@ img {
   text-align: right;
 }
 
-/*стили сложного фильтра*/
 .filter legend {
   font-size: 18px;
   font-weight: 700;
@@ -824,7 +750,6 @@ img {
   opacity: 1;
 }
 
-/*здесь hover работает независимо от того у инпута он или у радио*/
 .filter-input-radio:focus+.label-radio::before,
 .filter-input-radio:checked:focus+.label-radio::before {
   opacity: 1;
@@ -836,7 +761,6 @@ img {
   cursor: auto;
 }
 
-/* а здесь disabled работает только когад он возле инпута*/
 .label-checkbox::before {
   content: "";
   position: absolute;
@@ -860,12 +784,6 @@ img {
   opacity: 1;
 }
 
-/*
-.filter-input-radio:not(:disabled)+.label-radio:hover::before,
-.filter-input-radio:checked:not(:disabled)+.label-radio:hover::before {
-  opacity: 1;
-}
-*/
 .filter-input-checkbox:focus+.label-checkbox::before,
 .filter-input-checkbox:checked:focus+.label-checkbox::before {
   opacity: 1;
@@ -895,14 +813,12 @@ img {
   box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
-/*--------------сортировка карточек--------------------*/
 .filter-sort {
   display: flex;
   flex-wrap: wrap;
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 56px;
-  /* margin-top: 60px; */
   margin-top: 5px;
 }
 
@@ -1002,8 +918,6 @@ img {
   margin-left: 46px;
 }
 
-/*--------------сортировка карточек--------------------*/
-/*----------------карточки товаров------------*/
 .catalog {
   width: 760px;
   margin-bottom: -2px;
@@ -1155,13 +1069,8 @@ img {
 
 .pagination-item a:not([href]) {
   background: none;
-  /* border-color: solid 3px #dbdbdb; */
 }
 
-/*ненужное свойство*/
-/*праило ниже дублирующиее,
-можно оставить одно, только объединить свойства т.к.
-применяются к одному элементу*/
 .pagination-item-current a {
   border: solid 3px #dbdbdb;
 }
@@ -1182,25 +1091,24 @@ img {
   color: #a9a9a9;
 }
 
-/*здесь завершается разметка страницы каталога*/
-/*----------------footer сайта (Контакты)--------------*/
 .location {
   background-color: #888888;
   padding-top: 54px;
   padding-bottom: 55px;
   background-image: url(../img/map/merged-map.png);
   background-position: 50% 50%;
- position: relative;
+  position: relative;
 }
 
 .location .container-center {
   pointer-events: none;
 }
+
 iframe {
   position: absolute;
   width: 100%;
   height: 100%;
-  border:0;
+  border: 0;
   top: 0;
   left: 0;
   z-index: 1;
@@ -1215,7 +1123,6 @@ iframe {
   padding-bottom: 47px;
   z-index: 10;
   pointer-events: auto;
-
 }
 
 .contacts {
@@ -1231,13 +1138,11 @@ iframe {
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
-  /* margin-bottom: 27px; */
   margin-bottom: 22px;
   margin-top: 0;
 }
 
 .contact-address {
-  /* margin-bottom: 17px; */
   margin-bottom: 19px;
   margin-left: 2px;
   padding-right: 5px;
@@ -1245,7 +1150,6 @@ iframe {
 
 .contact-phone a {
   color: #666666;
-  /* margin-bottom: 35px; */
   margin-left: 2px;
 }
 
@@ -1255,9 +1159,7 @@ iframe {
   padding-right: 44px;
 }
 
-/*--------форма обратной связи начало---------*/
 .popup {
-
   position: fixed;
   left: 50%;
   top: 2%;
@@ -1270,8 +1172,6 @@ iframe {
   padding-left: 100px;
   padding-bottom: 84px;
   box-shadow: 0 15px 20px 10px #5e5f5f;
-  /* border: solid 1px #000; */
-  /* transform: translateY(-50%); */
 }
 
 .popup-form {
@@ -1298,13 +1198,12 @@ iframe {
 .mail,
 .letter {
   margin: 0;
-  /* margin-bottom: 35px; */
 }
 
 .letter {
   margin-bottom: 47px;
   width: 100%;
-  }
+}
 
 .name input,
 .mail input,
@@ -1348,16 +1247,6 @@ iframe {
 .popup-form textarea:focus {
   border: 2px solid #000000;
 }
-
-/* .popup-form input[type="text"]:required:invalid {
-border-color: #e74246;
-color: #e74246;
-}
-
-.popup-form textarea:required:invalid {
-border-color: #e74246;
-color: #e74246;
-} */
 
 .modal-button {
   display: block;
@@ -1404,16 +1293,26 @@ color: #e74246;
   transform: rotate(-45deg);
 }
 
- .popup {
-display: none;
-/* transform: translateY(-50%); */
+.popup {
+  display: none;
 }
 
 @keyframes glide {
-  0% {transform: translateX(-2000px);}
-  70% {transform: translateX(30px);}
-  90% {transform: translateX(-10px);}
-  100% {transform: translateX(0);}
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .popup-show {
@@ -1423,9 +1322,17 @@ display: none;
 }
 
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-30px); }
-  20%, 40%, 60%, 80% { transform: translateX(30px); }
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-30px);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(30px);
+  }
 }
 
 .modal-error {
@@ -1437,7 +1344,7 @@ display: none;
   border-color: #e74246;
   color: #e74246;
 }
-/*-----------форма обратной связи конец-------*/
+
 .social-connection {
   display: flex;
   padding-top: 37px;
