@@ -859,6 +859,12 @@ img {
   opacity: 0.3;
 }
 
+.sorting-type a:not([href]),
+.sorting-direction a:not([href]) {
+  color: #000000;
+  opacity: 1;
+}
+
 .sorting-type a:hover,
 .sorting-type a:focus {
   color: #000000;
@@ -873,11 +879,6 @@ img {
 .sorting-direction a {
   color: #000000;
   opacity: 0.2;
-}
-
-.sorting-direction a:hover {
-  color: #000000;
-  opacity: 0.6;
 }
 
 .sorting-direction a:active {
