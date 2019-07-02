@@ -865,13 +865,13 @@ img {
   opacity: 1;
 }
 
-.sorting-type a:hover,
-.sorting-type a:focus {
+.sorting-type a[href]:hover,
+.sorting-type a[href]:focus {
   color: #000000;
   opacity: 0.6;
 }
 
-.sorting-type a:active {
+.sorting-type a[href]:active {
   color: #000000;
   opacity: 1;
 }
