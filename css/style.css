@@ -817,7 +817,7 @@ img {
   flex-wrap: wrap;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 56px;
+  margin-bottom: 38px;
   margin-top: 5px;
 }
 
@@ -900,25 +900,21 @@ img {
   height: 0;
 }
 
-.down::before {
-  content: "";
-  position: absolute;
+.down {
   border: 7px solid transparent;
   border-top: 13px solid #000000;
   margin-left: 18px;
-  top: 3px;
+  top: 16px;
 }
 
-.up::before {
-  content: "";
-  position: absolute;
+.up {
   border: 7px solid transparent;
   border-bottom: 13px solid #000000;
-  top: -5px;
+  top: -35px;
   margin-left: 46px;
 }
 
-.catalog {
+ .catalog {
   width: 760px;
   margin-bottom: -2px;
 }
