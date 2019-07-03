@@ -188,6 +188,7 @@ img {
   width: 18px;
   height: 18px;
   background-color: #ffffff;
+  vertical-align: baseline;
   border-radius: 50%;
 }
 
